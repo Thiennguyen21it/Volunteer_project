@@ -1,0 +1,99 @@
+:root{
+    --primary-color: #15742A;
+    --secondary-color: #E9F3E7;
+    --white: #fff;
+    --black: #000000;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+button{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* header */
+header{
+    background-color: #15742A;
+}
+
+.header-lang{
+    width: 1280px;
+    height: 40px;
+}
+
+.header-lang .row .language{
+    color: var(--white);
+    font-size: 13pt;
+    line-height: 40px;
+    /* padding: 5px; */
+}
+
+header .header-nav nav{
+    box-shadow: 1px 1px 1px #AAA;;
+    
+}
+
+header .header-nav a{
+    font-size: 14pt;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+header .header-nav .nav-item{
+    padding-right: 65px;
+
+}
+
+header .header-nav .navbar a:hover{
+    color: var(--primary-color);
+}
+
+/* project */
+.project{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.project .title{
+    padding-bottom: 20px;
+}
+
+.project .content .intro-project{
+    padding-left: 35px;
+}
+
+.project .content .intro-project p{
+    text-align:justify;
+    margin: 5px;
+    font-size: small;
+}
+
+.project .content .intro-project i{
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+.project .content iframe{
+    width:665px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.project .content .intro-project .row{
+    padding-bottom: 10px;
+}
+
+
