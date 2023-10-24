@@ -6,11 +6,16 @@
     <title>Home</title>
     <link rel="stylesheet" href="style_index.css">
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <header>
@@ -118,8 +123,19 @@
                         <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4"><a href="https://www.w3schools.com/">Funding</a></div>
-                        <div class="col-sm-8"></div>
+                        <div class="col-sm-2"><a href="https://www.w3schools.com/">Funding</a></div>
+                        <div class="col-sm-10">
+
+                            <div class="row">
+                                <div class="col-sm-12" style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                                    <div class="w3-light-grey w3-round-xlarge" style="width:90%; height: 10px;">
+                                        <div class="w3-container w3-green w3-round-xlarge" style="width:80%; height: 10px;"></div>                                            
+                                    </div>
+                                    <p style="margin-bottom: 0px;">80%</p>
+                                </div>
+                                <div class="col-sm-8"></div>
+                            </div>
+                        </div>
                     </div>
                     <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
 
@@ -129,79 +145,433 @@
           </div>
     </section>
 
-    <section class="program-calling" id="activities" >
-        <div class="row" style="text-align: center;"><h3>Our <span> Activities</span></h3></div>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner row">
-                <div class="carousel-item active">
+    <section class="program" id="activities" >
+        <div class="row" style="text-align: center; padding-top: 40px;"><h2>Our <span> Activities</span></h2></div>
+        <div class="row" style="text-align: center; padding-top: 40px;"><h2>Programs are <span> calling</span> for volunteers and sponsors </h2></div>
+          <div class="swiper mySwiper container">
+            <div class="swiper-wrapper box-container">
+
+                <div class="swiper-slide box">
+                    <div class="title-cardBody">
+                        <h5 class="card-title">Teaching English for kids in the village</h5>
+                        <div class="row" style="padding: 0px;">
+                            <div class="col-6" style="height: 20px;">
+                                <p>Time: 23/10/2023</p>                                                
+                            </div>
+                            <div class="col-12 icon">
+                                <p>Place: Pà - Ong</p>
+                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                        <i class="fa-solid fa-share"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                                                    
                     <div class="row">
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="col-7 video">                                            
+                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                        </div>
+                        <div class="col-12 intro-project">                                            
+                            
+                            <p class="intro">
+                                This is a program under our charitable project that aims to provide English language education to children in rural 
+                                areas. The program is designed to equip children with the necessary skills to communicate effectively in English. 
+                                Our team of experienced teachers will teach the basics of English language to the children.
+                            </p>
+                            
+                            <div class="row">
+                                <div class="col-sm-12" style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                                    <div class="w3-light-grey w3-round-xlarge" style="width:90%; height: 10px; margin-bottom: 15px;">
+                                        <div class="w3-container w3-green w3-round-xlarge" style="width:80%; height: 10px;"></div>                                            
+                                    </div>
+                                    <p style="margin-bottom: 0px;">80%</p>
                                 </div>
+                                <div class="col-sm-8"></div>
+                            </div>
+
+                            <div class="row-button">
+                                <div class="col"><a href="https://www.w3schools.com/">Plan File</a></div>
+                                <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
+                                <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
+                            </div>                                                                                                                                    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="title-cardBody">
+                        <h5 class="card-title">Teaching English for kids in the village</h5>
+                        <div class="row" style="padding: 0px;">
+                            <div class="col-6" style="height: 20px;">
+                                <p>Time: 23/10/2023</p>                                                
+                            </div>
+                            <div class="col-12 icon">
+                                <p>Place: Pà - Ong</p>
+                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                        <i class="fa-solid fa-share"></i>
+                                </p>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                                                    
+                    <div class="row">
+                        <div class="col-7 video">                                            
+                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                        </div>
+                        <div class="col-12 intro-project">                                            
+                            
+                            <p class="intro">
+                                This is a program under our charitable project that aims to provide English language education to children in rural 
+                                areas. The program is designed to equip children with the necessary skills to communicate effectively in English. 
+                                Our team of experienced teachers will teach the basics of English language to the children.
+                            </p>
+                            
+                            <div class="row">
+                                <div class="col-sm-12" style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                                    <div class="w3-light-grey w3-round-xlarge" style="width:90%; height: 10px; margin-bottom: 15px;">
+                                        <div class="w3-container w3-green w3-round-xlarge" style="width:80%; height: 10px;"></div>                                            
+                                    </div>
+                                    <p style="margin-bottom: 0px;">80%</p>
                                 </div>
+                                <div class="col-sm-8"></div>
+                            </div>
+
+                            <div class="row-button">
+                                <div class="col"><a href="https://www.w3schools.com/">Plan File</a></div>
+                                <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
+                                <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
+                            </div>                                                                                                                                    
+                        </div>
+                    </div>
+                </div>
+               
+           </div>
+       </div>
+        <!--  -->
+       <!-- <div class="swiper-button-next swiperBtn2"></div>
+       <div class="swiper-button-prev swiperBtn2"></div> -->
+
+
+    </section>
+
+    <!-- program-running -->
+    <section class="program">
+        <div class="row" style="text-align: center; padding-top: 40px;"><h2>Voulnteer Programs are <span> running</span></h2></div>
+          <div class="swiper mySwiper container">
+            <div class="swiper-wrapper box-container">
+
+                <div class="swiper-slide box">
+                    <div class="title-cardBody">
+                        <h5 class="card-title">Teaching English for kids in the village</h5>
+                        <div class="row" style="padding: 0px;">
+                            <div class="col-6" style="height: 20px;">
+                                <p>Time: 23/10/2023</p>                                                
+                            </div>
+                            <div class="col-12 icon">
+                                <p>Place: Pà - Ong</p>
+                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                        <i class="fa-solid fa-share"></i>
+                                </p>
                             </div>
                         </div>
-                      </div>
-                    
+                    </div>
+                                                    
+                    <div class="row">
+                        <div class="col-7 video">                                            
+                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                        </div>
+                        <div class="col-12 intro-project">                                            
+                            
+                            <p class="intro">
+                                This is a program under our charitable project that aims to provide English language education to children in rural 
+                                areas. The program is designed to equip children with the necessary skills to communicate effectively in English. 
+                                Our team of experienced teachers will teach the basics of English language to the children.
+                            </p>
+                            
+                            <div class="row">
+                                <div class="col-sm-12" style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                                    <div class="w3-light-grey w3-round-xlarge" style="width:90%; height: 10px; margin-bottom: 15px;">
+                                        <div class="w3-container w3-green w3-round-xlarge" style="width:80%; height: 10px;"></div>                                            
+                                    </div>
+                                    <p style="margin-bottom: 0px;">80%</p>
+                                </div>
+                                <div class="col-sm-8"></div>
+                            </div>
+
+                            <div class="row-button">
+                                <div class="col"><a href="https://www.w3schools.com/">Plan File</a></div>
+                                <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
+                                <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
+                            </div>                                                                                                                                    
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+
+                <div class="swiper-slide box">
+                    <div class="title-cardBody">
+                        <h5 class="card-title">Teaching English for kids in the village</h5>
+                        <div class="row" style="padding: 0px;">
+                            <div class="col-6" style="height: 20px;">
+                                <p>Time: 23/10/2023</p>                                                
+                            </div>
+                            <div class="col-12 icon">
+                                <p>Place: Pà - Ong</p>
+                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                        <i class="fa-solid fa-share"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                                                    
+                    <div class="row">
+                        <div class="col-7 video">                                            
+                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                        </div>
+                        <div class="col-12 intro-project">                                            
+                            
+                            <p class="intro">
+                                This is a program under our charitable project that aims to provide English language education to children in rural 
+                                areas. The program is designed to equip children with the necessary skills to communicate effectively in English. 
+                                Our team of experienced teachers will teach the basics of English language to the children.
+                            </p>
+                            
+                            <div class="row">
+                                <div class="col-sm-12" style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                                    <div class="w3-light-grey w3-round-xlarge" style="width:90%; height: 10px; margin-bottom: 15px;">
+                                        <div class="w3-container w3-green w3-round-xlarge" style="width:80%; height: 10px;"></div>                                            
+                                    </div>
+                                    <p style="margin-bottom: 0px;">80%</p>
+                                </div>
+                                <div class="col-sm-8"></div>
+                            </div>
+
+                            <div class="row-button">
+                                <div class="col"><a href="https://www.w3schools.com/">Plan File</a></div>
+                                <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
+                                <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
+                            </div>                                                                                                                                    
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+               
+           </div>
+       </div>
+    </section>
+
+    <!-- program-done -->
+    <section class="program">
+        <div class="row" style="text-align: center; padding-top: 40px;"><h2>Programs are <span> done and achievements</span></h2></div>
+          <div class="swiper mySwiper container">
+            <div class="swiper-wrapper box-container">
+
+                <div class="swiper-slide box">
+                    <div class="title-cardBody">
+                        <h5 class="card-title">Teaching English for kids in the village</h5>
+                        <div class="row" style="padding: 0px;">
+                            <div class="col-6" style="height: 20px;">
+                                <p>Time: 23/10/2023</p>                                                
+                            </div>
+                            <div class="col-12 icon">
+                                <p>Place: Pà - Ong</p>
+                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                        <i class="fa-solid fa-share"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                                                    
+                    <div class="row">
+                        <div class="col-7 video">                                            
+                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                        </div>
+                        <div class="col-12 intro-project">                                            
+                            
+                            <p class="intro">
+                                This is a program under our charitable project that aims to provide English language education to children in rural 
+                                areas. The program is designed to equip children with the necessary skills to communicate effectively in English. 
+                                Our team of experienced teachers will teach the basics of English language to the children.
+                            </p>
+                            
+                            <div class="row">
+                                <div class="col-sm-12" style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                                    <div class="w3-light-grey w3-round-xlarge" style="width:90%; height: 10px; margin-bottom: 15px;">
+                                        <div class="w3-container w3-green w3-round-xlarge" style="width:80%; height: 10px;"></div>                                            
+                                    </div>
+                                    <p style="margin-bottom: 0px;">80%</p>
+                                </div>
+                                <div class="col-sm-8"></div>
+                            </div>
+
+                            <div class="row-button">
+                                <div class="col"><a href="https://www.w3schools.com/">Plan File</a></div>
+                                <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
+                                <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
+                            </div>                                                                                                                                    
+                        </div>
+                    </div>
                 </div>
-                
+
+                <div class="swiper-slide box">
+                    <div class="title-cardBody">
+                        <h5 class="card-title">Teaching English for kids in the village</h5>
+                        <div class="row" style="padding: 0px;">
+                            <div class="col-6" style="height: 20px;">
+                                <p>Time: 23/10/2023</p>                                                
+                            </div>
+                            <div class="col-12 icon">
+                                <p>Place: Pà - Ong</p>
+                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                        <i class="fa-solid fa-share"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                                                    
+                    <div class="row">
+                        <div class="col-7 video">                                            
+                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                        </div>
+                        <div class="col-12 intro-project">                                            
+                            
+                            <p class="intro">
+                                This is a program under our charitable project that aims to provide English language education to children in rural 
+                                areas. The program is designed to equip children with the necessary skills to communicate effectively in English. 
+                                Our team of experienced teachers will teach the basics of English language to the children.
+                            </p>
+                            
+                            <div class="row">
+                                <div class="col-sm-12" style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                                    <div class="w3-light-grey w3-round-xlarge" style="width:90%; height: 10px; margin-bottom: 15px;">
+                                        <div class="w3-container w3-green w3-round-xlarge" style="width:80%; height: 10px;"></div>                                            
+                                    </div>
+                                    <p style="margin-bottom: 0px;">80%</p>
+                                </div>
+                                <div class="col-sm-8"></div>
+                            </div>
+
+                            <div class="row-button">
+                                <div class="col"><a href="https://www.w3schools.com/">Plan File</a></div>
+                                <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
+                                <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
+                            </div>                                                                                                                                    
+                        </div>
+                    </div>
+                </div>
+               
+           </div>
+       </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="logo">
+                <img src="image/logo.png" alt="">
+                <p>SmileEye</p>
             </div>
+            <p style="font-size: 17px;">Whatever it is that you care about, there will be a charity working on it. Charities help in lots of different ways.</p>
+            <div class="socials">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <li class="ft-Menu">
+                <h2>Menu</h2>
+                <ul class="box">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Achievement</a></li>
+                    <li><a href="#">Contributors</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </li>
+            <li class="ft-aboutUs">
+                <h2>About Us</h2>
+                <ul class="box">
+                    <li><a href="#">How it work?</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </li>
+            <li class="ft-Info">
+                <h2>Contacts Info</h2>
+                <ul class="box">
+                    <li class="box-info">
+                        <img src="image/phone.png" alt="">
+                        <div class="call">
+                            <h3>Call Us<br></h3>
+                            <p>0962 414 125</p>
+                        </div>
+                    </li>
+                    <li class="box-info">
+                        <img src="image/email.png" alt="">
+                        <div class="email">
+                            <h3>Mail Us</h3>
+                            <p>dinhdongphuong@gmail.com</p>
+                        </div></li>
+                    <li class="box-info">
+                        <img src="image/pin.png" alt="">
+                        <div class="pin">
+                            <h3>Visit Us</h3>
+                            <p>Thôn Pà-Ong, Cà Dy, Nam Giang, tỉnh Quảng Nam</p>
+                        </div></li>
+                </ul>
+            </li>
+        </div>
         
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+    </footer>
 
-    </section>
-    <section class="program-running">
 
-    </section>
-    <section class="program-done">
 
-    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper  -->
+   <!-- <script>
+       var swiper = new Swiper(".mySwiper", {
+           slidesPerView: 2,
+           spaceBetween: 30,
+           slidesPerGroup: 2,
+           loop: true,
+           loopFillGroupWithBlank: true,
+           pagination: {
+               el: ".swiper-pagination",
+               clickable: true,
+           },
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+           navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+           },
+       });
+
+       var swiper = new Swiper(".mySwiper2", {
+           spaceBetween: 30,
+           centeredSlides: true,
+            autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+            },
+           pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+           },
+           navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+           },
+       });
+
+   </script> -->
 </body>
 </html>
