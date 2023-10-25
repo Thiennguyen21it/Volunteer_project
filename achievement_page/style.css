@@ -9,7 +9,7 @@
 
 .achivement .header {
   position: relative;
-  width: 1750px;
+  width: 100%;
   height: 175px;
   background-color: transparent;
 }
@@ -17,7 +17,7 @@
 .achivement .nav-search {
   display: flex;
   flex-direction: column;
-  width: 1750px;
+  width: 100%;
   height: 67px;
   align-items: flex-end;
   gap: 1px;
@@ -28,7 +28,7 @@
 
 .achivement .rectangle {
   position: relative;
-  width: 1750px;
+  width: 100%;
   height: 67px;
   background-color: #147429ed;
   border-radius: 20px;
@@ -83,7 +83,7 @@
 
 .achivement .overlap-group {
   position: absolute;
-  width: 1750px;
+  width: 100%;
   height: 108px;
   top: 0;
   left: 0;
@@ -203,7 +203,7 @@
 
 .achivement .frame {
   position: relative;
-  width: 1750px;
+  width: 100%;
   height: 781px;
   overflow: hidden;
 }
@@ -712,7 +712,7 @@
 
 .achivement .footer {
   position: relative;
-  width: 1750px;
+  width: 100%;
   height: 491px;
   background-color: #f5f5f5;
   overflow: hidden;
@@ -1069,7 +1069,7 @@
 
 .achivement .rectangle-5 {
   position: absolute;
-  width: 1750px;
+  width: 100%;
   height: 40px;
   top: 456px;
   left: -6px;
