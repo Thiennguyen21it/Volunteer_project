@@ -7,20 +7,14 @@
 
 html{
     overflow-x: hidden;
-    /* padding-left: 20px; */
 }
 
 *{
     margin: 0;
     padding: 0; 
     box-sizing:inherit;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* 
-section{
-    padding-left: 65px;
-    padding-right: 50px;
-} */
 
 span{
     color: var(--primary-color);
@@ -38,21 +32,52 @@ header{
 
 .header-lang{
     width: 1280px;
-    height: 40px;
+    height: 43px;
 }
+
+.header-lang .row {
+    height: 50px;
+}
+
+.header-lang .row .col img {
+    height: 40px; 
+    width:40px;
+}
+
 
 .header-lang .row .language{
     color: var(--white);
-    font-size: 13pt;
+    font-size: 14pt;
     line-height: 40px;
     /* padding: 5px; */
 }
 
+.header-lang .row a{
+    font-size: 14pt;
+}
+
+/* .header-lang .row .language .select{
+    background-color: #15742A; 
+    border-color: #15742A; 
+    color: white;
+    font-size: 13.5pt;
+    box-shadow: none;
+} */
+
+header .header-nav{
+    justify-content: space-between;
+}
+
 header .header-nav nav{
-    box-shadow: 1px 1px 1px #AAA;;
+    box-shadow: 1px 1px 1px #AAA;
     
 }
 
+
+header .header-nav .navbar-collapse{
+    justify-content: space-between;
+    
+}
 header .header-nav a{
     font-size: 14pt;
     color: black;
@@ -63,6 +88,11 @@ header .header-nav a{
 
 header .header-nav .nav-item{
     padding-right: 65px;
+
+}
+
+header .header-nav .nav-link{
+    justify-content: center;
 
 }
 
@@ -81,9 +111,14 @@ header .header-nav .navbar a:hover{
     padding-bottom: 20px;
 }
 
-/* .project .content{
-    display: flex; justify-items: space-between;
-} */
+.project .content .row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.project .content .row .col-5{
+    flex: 1 1 35rem;
+}
 
 .project .content .intro-project{
     padding-left: 35px;
@@ -103,7 +138,7 @@ header .header-nav .navbar a:hover{
 
 
 .project .content iframe{
-    width: 665px;;
+    width: 100%;;
     height: 350px;
     border-radius: 20px;
 }
@@ -114,7 +149,7 @@ header .header-nav .navbar a:hover{
 
 .program .container .box-container .box .row{
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
 .program .container .box-container .box .icon{
@@ -127,14 +162,9 @@ header .header-nav .navbar a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
-
-.program .container .box-container .box .intro-project .row-button{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .swiperBtn{
     margin-top: 740px;
     color: var(--primary-color);
@@ -150,8 +180,8 @@ header .header-nav .navbar a:hover{
 .program .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    /* justify-content: space-between; */
+    gap: 40px;
+    justify-content:space-around
 }
 
 .program .box-container .box{
@@ -169,6 +199,7 @@ header .header-nav .navbar a:hover{
 .program .box-container .box .card-title{
     text-align: center;
     font-size: 17pt;
+    font-weight: 500;
     padding-bottom: 15px;
 }
 
@@ -188,58 +219,38 @@ header .header-nav .navbar a:hover{
     text-align:justify;
     padding-top: 25px;
 }
+
+.box .row .intro-project .funding{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 /*  */
 
-
 /* footer */
-:before, *:after{
-    box-sizing: border-box;
-}
-
-body{
-    font-family: poppins;
-    margin: 0;
-    display: grid;
-    font-size: 14px;
-}
-
-footer{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+.footer{
     display: flex;
     flex-flow: row wrap;
-    padding: 10px 100px 0px 100px;
+    padding: 10px 80px 0px 80px;
     color: #1D1D1D;
     background-color: #F5F5F5;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 70px;
 }
 
-.footer > * {
-    flex: 1 100%;
-}
-
-.footer-left{
-    margin-right: 1.25rem;
-    margin-bottom: 2em;
-}
-
-.footer-left img{
-    width: 112.55px;
-}
-
-/* h2{
-    font-weight: 600;
-    font-size: 20px;
-} */
 
 .footer ul{
     list-style: none;
     padding-left: 0;
+    display: inline-block;
+
 }
 
 .footer li{
-    line-height: 3em;
+    line-height: 30px;
     list-style: none;
 }
 
@@ -247,103 +258,66 @@ footer{
     text-decoration: none;
 }
 
-.footer-right{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-flow: row wrap;
+.footer .ft{
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.footer .logo img{
+    width: 100px;
+    height: 100px;
 }
 
-.footer-right > *{
-    flex: 1 50%;
-    margin-right: 1.25em;
-}
-
-.footer-right .ft-Info img{
-    width: 50px;
-    height: 50px;
-}
-
-.footer-right .ft-Info .box-info{
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-right .ft-Info .box-info p{
+.footer .box .box-info p{
     color: #6F7775;
+    font-size: smaller;
+    margin-bottom: 5px;
 }
 
-.footer-right .ft-Info .box-info .call{
-    margin-left: 10px;
+.footer .box .box-info h3{
+    font-size: 14pt;
+    margin: 0px;
 }
 
-.footer-right .ft-Info .box-info .email{
-    margin-left: 10px;
-}
-
-.footer-right .ft-Info .box-info .pin{
-    margin-left: 10px;
-}
-
-h3{
-    width: auto;
-    height: 0px;
-    margin-top: 0px;
+.footer .box .box-info img{
+    width:30px;
+    height:30px;
+    padding-right: 0px;
 }
 
 .box a{
     color: #6F7775;
 }
 
-.footer-left p{
-    padding-right: 20%;
-    color: #999;
-}
-
-.footer-left .logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.footer-left .logo p{
-    padding-right: 20%;
-    color: #1D1D1D;
-    font-size: 27px;
-    font-weight: 600;
-    padding-left: 15px;
-}
-
 .socials a{
-    background: #F5F5F5;
     width: 30px;
     height: 30px;
     display: inline-block;
     margin-right: 10px;
+    padding-bottom: 80px;
 }
 
 .socials a i{
     color: #15742A;
-    /* padding: 10px 12px; */
+    padding: 10px 12px;
     font-size: 25px;
 }
 
 .footer-bottom{
-    width: auto;
+    width: 100%;
     height: 20px;
     background-color: #15742A;
 }
 
-@media screen and (min-width: 600px){
-    .footer-right > *{
+@media screen and (min-width: 400px){
+    .footer > *{
         flex: 1;
     }
-    .footer-left{
-        flex: 1 0px;
+    .footer{
+        display: flex;
+        flex: 1px;
     }
-    .footer-right{
+    .footer .logo{
         flex: 2 0px;
     }
 }
