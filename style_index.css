@@ -36,12 +36,13 @@ header{
 }
 
 .header-lang .row {
-    height: 50px;
+    height: 43px;
 }
 
-.header-lang .row .col img {
+.header-lang .row .col .logo {
     height: 40px; 
     width:40px;
+    margin-bottom: 20px;
 }
 
 
@@ -49,20 +50,11 @@ header{
     color: var(--white);
     font-size: 14pt;
     line-height: 40px;
-    /* padding: 5px; */
 }
 
 .header-lang .row a{
     font-size: 14pt;
 }
-
-/* .header-lang .row .language .select{
-    background-color: #15742A; 
-    border-color: #15742A; 
-    color: white;
-    font-size: 13.5pt;
-    box-shadow: none;
-} */
 
 header .header-nav{
     justify-content: space-between;
@@ -75,9 +67,9 @@ header .header-nav nav{
 
 
 header .header-nav .navbar-collapse{
-    justify-content: space-between;
-    
+    flex-direction: column;    
 }
+
 header .header-nav a{
     font-size: 14pt;
     color: black;
@@ -87,7 +79,7 @@ header .header-nav a{
 }
 
 header .header-nav .nav-item{
-    padding-right: 65px;
+    padding-right: 70px;
 
 }
 
@@ -197,9 +189,10 @@ header .header-nav .navbar a:hover{
 }
 
 .program .box-container .box .card-title{
-    text-align: center;
-    font-size: 17pt;
+    text-align: left;
+    font-size: 18pt;
     font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 15px;
 }
 
@@ -227,6 +220,13 @@ header .header-nav .navbar a:hover{
     justify-content: space-between;
     align-items: center;
 }
+
+
+.program .box-container .box .time, .place{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
 /*  */
 
 /* footer */

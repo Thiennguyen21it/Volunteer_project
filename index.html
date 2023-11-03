@@ -19,24 +19,25 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
+    
     <header>
         <div class="container header-lang">
             <div class="row">
                 <div class="col">
-                    <img src="image/logo.png">
+                    <img class="logo" src="image/logo.png">
+                    <a class="navbar-brand" href="index.html" style="color:white; font-size: 20pt; padding-right:70px;">Smile Eye Charity</a>
+
                 </div>
-                <div class="col-8">
-                   
-                </div>
-                <div class="col language">
+            
+                <div class="col-sm-auto language">
                     <div class="dropdown">
                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #15742A; border-color: #15742A;">
                             <img src="image/flag.jpg" style="height:23px; width:40px;"> English
                         </a>
-                      
+                    
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#"><img src="image/japanese.png" style="height:23px; width:40px;"> Japaneses</a></li>
-                          <li><a class="dropdown-item" href="#"><img src="image/vietnam.jpg" style="height:23px; width:40px;"> Vietnamese</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="image/japanese.png" style="height:23px; width:40px;"> Japaneses</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="image/vietnam.jpg" style="height:23px; width:40px;"> Vietnamese</a></li>
                         </ul>
                     </div>
                     
@@ -47,7 +48,6 @@
         <div class="header-nav">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html" style="font-size:18pt; padding-right:70px; font-weight: bold;">SmileEye</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -66,9 +66,6 @@
                                 <a class="nav-link" href="contributors.html">Contributors</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="contact.html">QA & Contact</a>
                             </li>
                         </ul>
@@ -82,8 +79,7 @@
     <section class="project">
         <div class="row justify-content-md-center title">
             <div class="col-md-8" style="text-align: center;">
-                <h2>DEVELOPING NEW PA-CANG VILLAGE, CA DY COMMUNE, NAM GIANG DISTRICT
-                    </h2>
+                <h2>DEVELOPING NEW PA-CANG VILLAGE, CA DY COMMUNE, NAM GIANG DISTRICT</h2>
             </div>
             
         </div>
@@ -104,7 +100,7 @@
                         <div class="col-6 icon">
                             <p>&nbsp;&nbsp;&nbsp;&nbsp;2000
                                     <i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                    <i class="fa-solid fa-share"></i>
+                                    <i id= "shareButton" class="fa-solid fa-share"></i>
                             </p>
                         </div>
                     </div>
@@ -124,7 +120,7 @@
                         <div class="col"><a href="https://drive.google.com/file/d/1wRTrraK7hh72TeFWES5uJK3cFGRHzbO_/view?usp=sharing">Pitch File</a></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-2"><a href="">Funding</a></div>
+                        <div class="col-sm-2"><a href="" style="text-decoration: none;">Funding</a></div>
                         <div class="col-10">
 
                             <div class="row-cols-auto">
@@ -138,8 +134,45 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <a class="nav-link" class="btn btn-success" href="contact.html#contact" style="background-color:#15742A ; color: white;">Be a contributor or sponsor</a> -->
-                    <button type="button" class="btn btn-success" style="background-color:#15742A ;" href ="contact.html#contact">Be a contributor or sponsor</button>
+                    
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color:#15742A ; float: right;" href ="contact.html#contact">
+                        Be a contributor or sponsor
+                    </button>
+                    
+                    <!-- Btr Become sponsor -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">You want to <b>Become a contributor or sponsor</b> please fill in below:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Questions/ Contributive Opinions</label>
+                                        <textarea class="form-control" placeholder="" id="floatingTextarea" style="height: 150px;"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Your name</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Your email</label>
+                                        <input type="email" class="form-control" id="exampleInputPassword1">
+                                    </div>
+            
+                                    <button type="submit" class="btn btn-success" >Submit</button>
+                                  </form>
+                            </div>
+                            <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send</button> -->
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
           </div>
@@ -158,11 +191,11 @@
                         <h5 class="card-title">Teaching English for kids in the village</h5>
                         <div class="row" style="padding: 0px;">
                             <div class="col-6" style="height: 20px;">
-                                <p><b>Time: 23/10/2023</b></p>                                               
+                                <p class="time">Time: 23/10/2023</p>                                               
                             </div>
                             <div class="col-12 icon">
-                                <p><b>Place: Pà - Ong</b></p>
-                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                <p class="place">Place: Pà - Ong</p>
+                                <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
                                         <i class="fa-solid fa-share"></i>
                                 </p>
                             </div>
@@ -205,11 +238,11 @@
                         <h5 class="card-title">Teaching English for kids in the village</h5>
                         <div class="row" style="padding: 0px;">
                             <div class="col-6" style="height: 20px;">
-                                <p><b>Time: 23/10/2023</b></p>                                               
+                                <p class="time">Time: 23/10/2023</p>                                               
                             </div>
                             <div class="col-12 icon">
-                                <p><b>Place: Pà - Ong</b></p>
-                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                <p class="place">Place: Pà - Ong</p>
+                                <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
                                         <i class="fa-solid fa-share"></i>
                                 </p>
                             </div>
@@ -239,7 +272,7 @@
                             </div>
 
                             <div class="row-button">
-                                <div class="col"><a href="https://www.w3schools.com/">Plan File</a></div>
+                                <div class="col"><a href="https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF">Plan File</a></div>
                                 <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
                                 <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
                             </div>                                                                                                                                    
@@ -267,11 +300,11 @@
                         <h5 class="card-title">Teaching English for kids in the village</h5>
                         <div class="row" style="padding: 0px;">
                             <div class="col-6" style="height: 20px;">
-                                <p><b>Time: 23/10/2023</b></p>                                               
+                                <p class="time">Time: 23/10/2023</p>                                               
                             </div>
                             <div class="col-12 icon">
-                                <p><b>Place: Pà - Ong</b></p>
-                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                <p class="place">Place: Pà - Ong</p>
+                                <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
                                         <i class="fa-solid fa-share"></i>
                                 </p>
                             </div>
@@ -301,7 +334,7 @@
                             </div>
 
                             <div class="row-button">
-                                <div class="col"><a href="https://www.w3schools.com/">Plan File</a></div>
+                                <div class="col"><a href="https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF">Plan File</a></div>
                                 <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
                                 <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
                             </div>                                                                                                                                    
@@ -314,11 +347,11 @@
                         <h5 class="card-title">Teaching English for kids in the village</h5>
                         <div class="row" style="padding: 0px;">
                             <div class="col-6" style="height: 20px;">
-                                <p><b>Time: 23/10/2023</b></p>                                               
+                                <p class="time">Time: 23/10/2023</p>                                               
                             </div>
                             <div class="col-12 icon">
-                                <p><b>Place: Pà - Ong</b></p>
-                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                <p class="place">Place: Pà - Ong</p>
+                                <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
                                         <i class="fa-solid fa-share"></i>
                                 </p>
                             </div>
@@ -348,7 +381,7 @@
                             </div>
 
                             <div class="row-button">
-                                <div class="col"><a href="https://www.w3schools.com/">Plan File</a></div>
+                                <div class="col"><a href="https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF">Plan File</a></div>
                                 <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
                                 <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
                             </div>                                                                                                                                    
@@ -371,11 +404,11 @@
                         <h5 class="card-title">Teaching English for kids in the village</h5>
                         <div class="row" style="padding: 0px;">
                             <div class="col-6" style="height: 20px;">
-                                <p><b>Time: 23/10/2023</b></p>                                               
+                                <p class="time">Time: 23/10/2023</p>                                               
                             </div>
                             <div class="col-12 icon">
-                                <p><b>Place: Pà - Ong</b></p>
-                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                <p class="place">Place: Pà - Ong</p>
+                                <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
                                         <i class="fa-solid fa-share"></i>
                                 </p>
                             </div>
@@ -405,7 +438,7 @@
                             </div>
 
                             <div class="row-button">
-                                <div class="col"><a href="https://www.w3schools.com/">Plan File</a></div>
+                                <div class="col"><a href="https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF">Plan File</a></div>
                                 <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
                                 <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
                             </div>                                                                                                                                    
@@ -418,11 +451,11 @@
                         <h5 class="card-title">Teaching English for kids in the village</h5>
                         <div class="row" style="padding: 0px;">
                             <div class="col-6" style="height: 20px;">
-                                <p><b>Time: 23/10/2023</b></p>                                               
+                                <p class="time">Time: 23/10/2023</p>                                               
                             </div>
                             <div class="col-12 icon">
-                                <p><b>Place: Pà - Ong</b></p>
-                                <p>2000<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
+                                <p class="place">Place: Pà - Ong</p>
+                                <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
                                         <i class="fa-solid fa-share"></i>
                                 </p>
                             </div>
@@ -452,7 +485,7 @@
                             </div>
 
                             <div class="row-button">
-                                <div class="col"><a href="https://www.w3schools.com/">Plan File</a></div>
+                                <div class="col"><a href="https://drive.google.com/drive/folders/1LjAQWPc2vkj9a4qdBJ7ngHfznyCdaOuF">Plan File</a></div>
                                 <div class="col"><a href="https://www.w3schools.com/">Pitch File</a></div>
                                 <button type="button" class="btn btn-success" style="background-color:#15742A ;">Be a contributor or sponsor</button>
                             </div>                                                                                                                                    
