@@ -122,8 +122,8 @@ header .header-nav .navbar a:hover{
     font-size: small;
 }
 
-.project .content .intro-project i{
-    font-size: 25px;
+.project .content .icon{
+    font-size: 30px;
     padding: 10px;
     
 }
@@ -224,7 +224,7 @@ header .header-nav .navbar a:hover{
 
 .program .box-container .box .time, .place{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-style: italic;
 }
 
 /*  */
@@ -398,7 +398,6 @@ header .header-nav .navbar a:hover{
     top: 0;
     right: 0;
     bottom: 0;
-    top: 0;
     left: 0;
     z-index: 10;
     display: flex;
@@ -442,7 +441,7 @@ header .header-nav .navbar a:hover{
     right: 20px;
     text-decoration: none;
     color: #ffffff;
-    margin-top: 400px;
+    margin-top: 215px;
     border: 1px solid #15742A;
     background-color: #15742A;
     display: flex;
@@ -483,8 +482,11 @@ header .header-nav .navbar a:hover{
 
 .article .program .card-title{
     font-size: 29px;
-    padding-top: 400px;
+    padding-top: 200px;
     margin-top: 0px;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 20px;
 }
 
 .article .container .rectangle{
