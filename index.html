@@ -31,14 +31,14 @@
             
                 <div class="col-sm-auto language">
                     <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #15742A; border-color: #15742A;">
+                        <a class="btn btn-secondary dropdown-toggle language-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #15742A; border-color: #15742A;">
                             <img src="image/flag.jpg" style="height:23px; width:40px;"> English
                         </a>
                     
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')"><img src="image/flag.jpg" style="height:23px; width:40px;"> English</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('jp')"><img src="image/japanese.png" style="height:23px; width:40px;"> Japaneses</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('vn')"><img src="image/vietnam.jpg" style="height:23px; width:40px;"> Vietnamese</a></li>
+                        <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('en')"><img src="image/flag.jpg"   class="language-icon" style="height:23px; width:40px;"> English</a></li>
+                        <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('jp')"><img src="image/japanese.png"  class="language-icon" style="height:23px; width:40px;"> Japaneses</a></li>
+                        <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('vn')"><img src="image/vietnam.jpg"   class="language-icon" style="height:23px; width:40px;"> Vietnamese</a></li>
                         </ul>
                     </div>
                     
@@ -179,11 +179,13 @@
           </div>
     </section>
 
-    <div class="row" style="text-align: center; padding-top: 35px;"><h2>Our <span> Activities</span></h2></div>
+    <div class="row" style="text-align: center; padding-top: 35px;"><h2 data-i18n="activities_title">Our Activities</h2></div>
 
     <!-- program-calling -->
     <section class="program" id="activities" >
-        <div class="row" style="text-align: center; padding-top: 20px;"><h2>Programs are <span> calling</span> for volunteers and sponsors </h2></div>
+        <div class="row" style="text-align: center; padding-top: 20px;">
+            <h2 data-i18n="program">Programs are <span> calling</span > for volunteers and sponsors </h2>
+        </div>
           <div class="swiper mySwiper container">
             <div class="swiper-wrapper box-container">
 
@@ -296,7 +298,7 @@
 
     <!-- program-running -->
     <section class="program">
-        <div class="row" style="text-align: center; padding-top: 35px;"><h2>Voulnteer Programs are <span> running</span></h2></div>
+        <div class="row" style="text-align: center; padding-top: 35px;"><h2 data-i18n="volunteer_title">Voulnteer Programs are <span> running</span></h2></div>
           <div class="swiper mySwiper container">
             <div class="swiper-wrapper box-container">
 
@@ -404,7 +406,7 @@
 
     <!-- program-done -->
     <section class="program">
-        <div class="row" style="text-align: center; padding-top: 35px;"><h2>Programs are <span> done and achievements</span></h2></div>
+        <div class="row" style="text-align: center; padding-top: 35px;"><h2 data-i18n="program_done">Programs are <span> done and achievements</span></h2></div>
           <div class="swiper mySwiper container">
             <div class="swiper-wrapper box-container">
 
@@ -511,7 +513,7 @@
     </section>
 
     <!-- blog -->
-    <div class="row" style="text-align: center; padding-top: 35px;" ><h2 data-i18n="blog-title">Our Blog</h2></div>
+    <div class="row" style="text-align: center; padding-top: 35px;" ><h2 data-i18n="blog_title">Our Blog</h2></div>
     <section class="post container" id="blog">
         <!-- Post box1 -->
         <div class="post-box">
