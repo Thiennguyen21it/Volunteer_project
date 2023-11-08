@@ -16,6 +16,53 @@ html{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.pop-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    background: #fff;
+    border-radius: 15px;
+    width: 25%;
+    height: 15%;
+    opacity: 0;
+}
+
+.pop-up.active {
+    opacity: 1;
+}
+
+.pop-up.close {
+    opacity: 0;
+}
+
+.pop-up .content {
+    margin: 20px 0;
+}
+
+.field i {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.field input {
+    height: 100%;
+    font-size: 15px;
+    width: 70%;
+}
+
+.field button {
+    padding: 5px 18px;
+    border: 2px solid transparent;
+    color: #fff;
+    background: #7d2ae8;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
 span{
     color: var(--primary-color);
 }
