@@ -94,6 +94,100 @@ var translations = {
        }); 
    }
 
+   const dialog = document.querySelector('.pop-up')
+    const input = document.getElementById("linkInput");
+    const share1 = document.getElementById("shareButton1");
+    const share2 = document.getElementById("shareButton2");
+    const share3 = document.getElementById("shareButton3");
+    const share4 = document.getElementById("shareButton4");
+    const share5 = document.getElementById("shareButton5");
+    const share6 = document.getElementById("shareButton6");
+    const share7 = document.getElementById("shareButton7");
+
+    //Copy text
+    function CopyText()
+    {
+        var linkValue = input.getAttribute('value');
+        navigator.clipboard.writeText(linkValue);
+    }
+
+    function Close()
+    {
+        share1.click();
+    }
+
+    function firstButton()
+    {
+        share1.addEventListener('click', () => {
+            dialog.classList.toggle('active');
+        });
+        var link = document.querySelector('.Vid1');
+        var valueSrc = link.getAttribute('src');
+        input.setAttribute('value', valueSrc);
+    }
+    function secondButton()
+    {
+        share2.addEventListener('click', () => {
+            dialog.classList.toggle('active');
+        });
+        var link = document.querySelector('.Vid2');
+        var valueSrc = link.getAttribute('src');
+        input.setAttribute('value', valueSrc);
+    }
+    function thirdButton()
+    {
+        share3.addEventListener('click', () => {
+            dialog.classList.toggle('active');
+        });
+        var link = document.querySelector('.Vid3');
+        var valueSrc = link.getAttribute('src');
+        input.setAttribute('value', valueSrc);
+    }
+    function fourthButton()
+    {
+        share4.addEventListener('click', () => {
+            dialog.classList.toggle('active');
+        });
+        var link = document.querySelector('.Vid4');
+        var valueSrc = link.getAttribute('src');
+        input.setAttribute('value', valueSrc);
+    }
+    function fifthButton()
+    {
+        share5.addEventListener('click', () => {
+            dialog.classList.toggle('active');
+        });
+        var link = document.querySelector('.Vid5');
+        var valueSrc = link.getAttribute('src');
+        input.setAttribute('value', valueSrc);
+    }
+    function sixButton()
+    {
+        share6.addEventListener('click', () => {
+            dialog.classList.toggle('active');
+        });
+        var link = document.querySelector('.Vid6');
+        var valueSrc = link.getAttribute('src');
+        input.setAttribute('value', valueSrc);
+    }
+    function sevenButton()
+    {
+        share7.addEventListener('click', () => {
+            dialog.classList.toggle('active');
+        });
+        var link = document.querySelector('.Vid7');
+        var valueSrc = link.getAttribute('src');
+        input.setAttribute('value', valueSrc);
+    }
+
+    share1.addEventListener('click', firstButton);
+    share2.addEventListener('click', secondButton);
+    share3.addEventListener('click', thirdButton);
+    share4.addEventListener('click', fourthButton);
+    share5.addEventListener('click', fifthButton);
+    share6.addEventListener('click', sixButton);
+    share7.addEventListener('click', sevenButton);
+
    
 
    

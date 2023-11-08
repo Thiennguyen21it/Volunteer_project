@@ -84,12 +84,25 @@
             </div>
             
         </div>
+
+        <div class="pop-up">
+            <p style="margin-left: 80px;">Share via copy link</p>
+            <div onclick="Close()" class="Close" style="position: absolute; width: 20%; left: 90%; top: 21%; cursor: pointer; border-radius: 50%;"><ion-icon name="close-outline"></ion-icon></div>
+        
+            <div class="content">
+                <div class="field">
+                    <i class="uil uil-link"></i>
+                    <input id="linkInput" type="text" value="">
+                    <button onclick="CopyText()">Copy</button>
+                </div>
+            </div>
+        </div>
     
         <div class="container content">
             <div class="row row-cols-auto">
                 <div class="col-7 video">
                     
-                    <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="Vid1" src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 
                 </div>
                 <div class="col-5 intro-project">
@@ -101,7 +114,7 @@
                         <div class="col-6 icon">
                             <p>&nbsp;&nbsp;&nbsp;&nbsp;2000
                                     <i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                    <i id= "shareButton" class="fa-solid fa-share"></i>
+                                    <i id= "shareButton1" class="fa-solid fa-share"></i>
                             </p>
                         </div>
                     </div>
@@ -199,14 +212,14 @@
                             <div class="col-12 icon">
                                 <p class="place">Place: Pà - Ong</p>
                                 <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                        <i class="fa-solid fa-share"></i>
+                                        <i id="shareButton2" class="fa-solid fa-share"></i>
                                 </p>
                             </div>
                         </div>
                     </div>                             
                     <div class="row">
                         <div class="col-7 video">                                            
-                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                            <iframe class="Vid2" src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
                         </div>
                         <div class="col-12 intro-project">                                            
                             
@@ -248,14 +261,14 @@
                             <div class="col-12 icon">
                                 <p class="place">Place: Pà - Ong</p>
                                 <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                        <i class="fa-solid fa-share"></i>
+                                        <i id="shareButton3" class="fa-solid fa-share"></i>
                                 </p>
                             </div>
                         </div>
                     </div>                             
                     <div class="row">
                         <div class="col-7 video">                                            
-                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                            <iframe class="Vid3" src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
                         </div>
                         <div class="col-12 intro-project">                                            
                             
@@ -312,14 +325,14 @@
                             <div class="col-12 icon">
                                 <p class="place">Place: Pà - Ong</p>
                                 <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                        <i class="fa-solid fa-share"></i>
+                                        <i id="shareButton4" class="fa-solid fa-share"></i>
                                 </p>
                             </div>
                         </div>
                     </div>                             
                     <div class="row">
                         <div class="col-7 video">                                            
-                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                            <iframe class="Vid4" src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
                         </div>
                         <div class="col-12 intro-project">                                            
                             
@@ -361,14 +374,14 @@
                             <div class="col-12 icon">
                                 <p class="place">Place: Pà - Ong</p>
                                 <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                        <i class="fa-solid fa-share"></i>
+                                        <i id="shareButton5" class="fa-solid fa-share"></i>
                                 </p>
                             </div>
                         </div>
                     </div>                             
                     <div class="row">
                         <div class="col-7 video">                                            
-                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                            <iframe class="Vid5" src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
                         </div>
                         <div class="col-12 intro-project">                                            
                             
@@ -420,14 +433,14 @@
                             <div class="col-12 icon">
                                 <p class="place">Place: Pà - Ong</p>
                                 <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                        <i class="fa-solid fa-share"></i>
+                                        <i id="shareButton6" class="fa-solid fa-share"></i>
                                 </p>
                             </div>
                         </div>
                     </div>                             
                     <div class="row">
                         <div class="col-7 video">                                            
-                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                            <iframe class="Vid6" src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
                         </div>
                         <div class="col-12 intro-project">                                            
                             
@@ -469,14 +482,14 @@
                             <div class="col-12 icon">
                                 <p class="place">Place: Pà - Ong</p>
                                 <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                        <i class="fa-solid fa-share"></i>
+                                        <i id="shareButton7" class="fa-solid fa-share"></i>
                                 </p>
                             </div>
                         </div>
                     </div>                             
                     <div class="row">
                         <div class="col-7 video">                                            
-                            <iframe src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
+                            <iframe class="Vid7" src="https://www.youtube.com/embed/543jwFfCZvg?si=cFkeCK3EdYHGqfDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                        
                         </div>
                         <div class="col-12 intro-project">                                            
                             
@@ -767,6 +780,9 @@
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- Initialize Swiper  -->
    <!-- <script>
