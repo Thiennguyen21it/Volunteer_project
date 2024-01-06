@@ -173,11 +173,18 @@ header .header-nav .navbar a:hover{
     font-size: small;
 }
 
+.project .content .row .intro-project .scrollable-content{
+    overflow-y: scroll;
+    height: 350px;
+}
+
 .project .content .icon{
     font-size: 30px;
     padding: 10px;
     
 }
+
+
 
 
 .project .content iframe{
@@ -266,6 +273,7 @@ header .header-nav .navbar a:hover{
     font-size: 11pt; 
     text-align:justify;
     padding-top: 25px;
+    overflow-y: scroll;
 }
 
 .box .row .intro-project .funding{
@@ -526,10 +534,6 @@ header .header-nav .navbar a:hover{
     width: 100%;
 }
 
-/* .article .list_article{
-    /* width: 60%;
-    flex: 1;
-} */
 
 .article .program .card-title{
     font-size: 29px;
