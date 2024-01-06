@@ -75,11 +75,15 @@ button{
 /* header */
 header{
     background-color: #15742A;
+    position: fixed;
+    width: 100%;
+    z-index: 88;
 }
 
 .header-lang{
     width: 1280px;
     height: 43px;
+    
 }
 
 .header-lang .row {
@@ -96,7 +100,7 @@ header{
 .header-lang .row .language{
     color: var(--white);
     font-size: 14pt;
-    line-height: 40px;
+    line-height: 20px;
 }
 
 .header-lang .row a{
@@ -169,8 +173,8 @@ header .header-nav .navbar a:hover{
     font-size: small;
 }
 
-.project .content .intro-project i{
-    font-size: 25px;
+.project .content .icon{
+    font-size: 30px;
     padding: 10px;
     
 }
@@ -195,6 +199,10 @@ header .header-nav .navbar a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.program .container .box-container .box .icon .fa-share, .fa-heart{
+    font-size: 24px;
 }
 
 .program .container .box-container .box .intro-project .row-button{
@@ -271,7 +279,7 @@ header .header-nav .navbar a:hover{
 
 .program .box-container .box .time, .place{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-style: italic;
 }
 
 /*  */
@@ -316,20 +324,19 @@ header .header-nav .navbar a:hover{
 }
 
 .footer .box .box-info p{
-    color: #6F7775;
-    font-size: smaller;
+    font-size: 11pt;
     margin-bottom: 5px;
 }
 
 .footer .box .box-info h3{
-    font-size: 14pt;
+    font-size: 12pt;
     margin: 0px;
 }
 
 .footer .box .box-info img{
-    width:30px;
-    height:30px;
-    padding-right: 0px;
+    width:20px;
+    height:20px;
+    padding: 0px;
 }
 
 .box a{
@@ -364,9 +371,9 @@ header .header-nav .navbar a:hover{
         display: flex;
         flex: 1px;
     }
-    .footer .logo{
+    /* .footer .logo{
         flex: 2 0px;
-    }
+    } */
 }
 /*  */
 
@@ -445,7 +452,6 @@ header .header-nav .navbar a:hover{
     top: 0;
     right: 0;
     bottom: 0;
-    top: 0;
     left: 0;
     z-index: 10;
     display: flex;
@@ -481,17 +487,14 @@ header .header-nav .navbar a:hover{
     background-color: #fff;
 }
 
-.dialog-close-btn{
-    width: 20px;
-    height: 20px;
+.btn-close{
+    font-size: 20px;
     position: absolute;
-    top: 2px;
+    margin-top: 0px;
     right: 20px;
     text-decoration: none;
-    color: #ffffff;
-    margin-top: 400px;
-    border: 1px solid #15742A;
-    background-color: #15742A;
+    color: #6F7775;
+    margin-top: 215px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -530,8 +533,11 @@ header .header-nav .navbar a:hover{
 
 .article .program .card-title{
     font-size: 29px;
-    padding-top: 400px;
+    padding-top: 230px;
     margin-top: 0px;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 20px;
 }
 
 .article .container .rectangle{

@@ -26,56 +26,76 @@
             <div class="row">
                 <div class="col">
                     <img class="logo" src="image/logo.png">
-                    <a class="navbar-brand" href="index.html" style="color:white; font-size: 20pt; padding-right:70px;">Smile Eye Charity</a>
+                    <a class="navbar-brand" href="index.html"
+                        style="color:white; font-size: 20pt; padding-right:70px;">Smile Eye Charity</a>
 
                 </div>
-            
-                <div class="col-sm-auto language">
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #15742A; border-color: #15742A;">
+                
+                <div class="col-auto" style="height: 100%; line-height: 40px; padding-right: 0px;">
+                    <img id="language-image" src="image/flag.jpg" style="height:23px; line-height: 100%;">
+                </div>
+                <div class="col-sm-2 language" style="padding-left: 0px;">
+                    <!-- <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle language-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            style="background-color: #15742A; border-color: #15742A;">
                             <img src="image/flag.jpg" style="height:23px; width:40px;"> English
                         </a>
-                    
+
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')"><img src="image/flag.jpg" style="height:23px; width:40px;"> English</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('jp')"><img src="image/japanese.png" style="height:23px; width:40px;"> Japaneses</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('vn')"><img src="image/vietnam.jpg" style="height:23px; width:40px;"> Vietnamese</a></li>
+                            <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('en')"><img
+                                        src="image/flag.jpg" class="language-icon" style="height:23px; width:40px;">
+                                    English</a></li>
+                            <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('jp')"><img
+                                        src="image/japanese.png" class="language-icon" style="height:23px; width:40px;">
+                                    Japaneses</a></li>
+                            <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('vn')"><img
+                                        src="image/vietnam.jpg" class="language-icon" style="height:23px; width:40px;">
+                                    Vietnamese</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                     
+                    <select id="language-select" class="form-select form-select-lg mb-3" style="height: 40px; color:white; background-color:#15742A; border:#15742A;" aria-label="Large select example" onchange="changeLanguage()">
+                        <option selected value="en">English</option>
+                        <option value="vn">Vietnamese</option>
+                        <option value="jp">Japaneses</option>
+                      </select>
+
                 </div>
             </div>
         </div>
-        
+
         <div class="header-nav">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html" data-i18n="home" >Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html"
+                                    data-i18n="home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#activities" data-i18n="activities" >Activities</a>
+                                <a class="nav-link" href="index.html#activities" data-i18n="activities">Activities</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="achievement.html" data-i18n="achievement">Achievement</a>
+                                <a class="nav-link" href="index.html#blog" data-i18n="achievement">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contributors.html" data-i18n="contributors" >Contributors</a>
+                                <a class="nav-link" href="contributors.html" data-i18n="contributors">Contributors</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html"data-i18n="QA" >QA & Contact</a>
+                                <a class="nav-link" href="contact.html" data-i18n="QA">QA & Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
-        
+
     </header>
 
     <div class="backgroud">
@@ -102,20 +122,15 @@
                     <div class="text-wrapper-9">
                         <img class="rectangle-2" src="image/logo.png" />&nbsp;
                         Smile Eye Charity</div>
-                    <div class="text-wrapper-7">
-                        <p>
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis pellentesque cras interdum ornare feugiat
-                            eget feugiat. Nunc, urna vitae pellentesque risus, ut volutpat eget libero vel. Vitae urna pharetra sem
-                            consectetur sed mi, nisi id feugiat. At egestas praesent mauris metus risus accumsan. Cras gravida natoque
-                            maecenas risus ultricies. Sed tincidunt porttitor viverra nunc neque, enim. Tristique molestie turpis turpis
-                            diam\
+                    <div class="text-wrapper-7" data-i18n="introSMC">
+                        <p>Smile Eye Charity, abbreviated as Smile Eye Charity, is a non-profit company. Smile Eye Charity connects domestic and foreign resources to organize practical training programs, accompany, and support people in difficult areas. Training programs aim to help people improve their life and economic skills in a sustainable way.
                         </p>
 
-                        <button class="btn">
+                        <!-- <button class="btn">
                             <div class="div-wrapper">
                                 <div class="text-wrapper-8">Read more</div>
                             </div>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>
@@ -127,30 +142,22 @@
     <div class="text-wrapper-10">Founder</div>
     <div class="overlap-2">
         <div class="group">
-            <!-- <img class="ellipse" src="img/ellipse-118.png" /> -->
         <div class="overlap-3">
             <div class="overlap-group-wrapper">
                 <div class="rectangle-3">
                     <div class="flexcontainer">
-                        <p class="text">Name: Dinh Thi Dong Phuong<br /></p>
-                        <p class="text">Organization: Smile Eye Charity<br/></p>
-                        <p class="text">Position: Director</p>
+                        <h2 class="text" style="font-size: 17pt;"> <b>Dinh Thi Dong Phuong</b></h2>
+                        <p class="text" data-i18n="founder1"><i>PHD. majoring in information technology, Japan<br>
+                            BA majoring in mathematics and information pedagogy, psychology, and education</i></p>
         
-                        <p class="text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
+                        <p data-i18n="founder" class="text">
+                            &nbsp&nbsp I was born and raised in a rural area of Quang Nam province. My childhood was filled with experiences with nature and love. My children and I played all kinds of games, including hide and seek, shooting arrows, shooting marbles, playing the leaf trumpet, playing checkers, jumping rope, catching fish and catching crabs, climbing trees to pick fruit, going into caves to catch bats, etc. My father is a teacher but he is also a very good farmer. Outside of work, he does all sorts of things. Land for growing rice, raising livestock, making wine, making vermicelli, making noodles, cutting hair, repairing cars, building houses, etc. My mother is also a teacher, and she also does all sorts of things after hours. She does herbal medicine, tutors, sells, etc. My parents always support each other when working. I followed my father and mother in most of my grandparents' jobs, so I experienced and learned many interesting things.<br><br> &nbsp&nbsp I went to college, worked, then studied abroad and working in Japan from 2026 to 2020. I have participated in many practical activities in Japan, from growing rice, growing potatoes, growing vegetables, cooking, baking meat, outdoor camping, fire prevention drills, etc. working as an IT project manager, doing a doctorate, working as a lecturer at Ritsumeikan University. Friends are both highly skilled in the field they love, have very sharp problem-solving skills, and are full of love. The love of relatives and friends helps me develop intellectually, heal wounds, and grow through real-life experiences. I was healed, became confident, optimistic, loved life, loved people, loved this life very much. <br><br> &nbsp&nbsp I realized that every time I participate in something to help others, I not only grow intellectually but am also healed. The love within me grows stronger. I love people more and love this life. This is truly a miracle. The more we help others, the more wisdom we develop and the happier we are. Join the project to experience these wonders with us.
+                        </p>
                     </div>
                 </div>
                 <div class="rectangle-4"></div>
-                <img class="ellipse" style="position: absolute;" src="img/ellipse-118.png" />
+                <!-- <img class="ellipse" style="position: absolute;" src="img/ellipse-118.png" /> -->
+                <img class="ellipse" style="position: absolute; border-radius: 200px" src="img/founder.jpg" />
             </div>            
         </div>
         <div class="group-2">
@@ -158,16 +165,16 @@
             
             <p class="text-wrapper-13" style="margin-top: 40px;">
                 <i class="fa-solid fa-phone" style="font-size: 17px;"></i>
-                +123-456-7890
+                0962 414 125
             </p> <br/>
             <p class="text-wrapper-14" >
                 <i class="fa-solid fa-envelope" style="font-size: 17px;"></i>
-                hello@reallygreatsite.com
+                dinhdongphuong@gmail.com
             </p><br/>
         
             <p class="text-wrapper-15">
                 <i class="fa-solid fa-location-dot" style="font-size: 17px;"></i>
-                123 Anywhere St., Any City, ST 12345
+                Thôn Pà-Ong, Xã Cà Dy, Huyện Nam Giang, Quảng Nam
             </p>
         </div>
         </div>
@@ -311,9 +318,9 @@
     </section>
 
     <footer class="row footer" style="margin-top: 70px;">
-        <div class="col-4 logo">
+        <div class="col-sm-5 logo">
             <img src="image/logo.png" alt="">
-            <p><h2><b>SmileEye</b></h2></p>
+            <p><h2><b>SmileEyeCharity</b></h2></p>
             <p style="font-size: 15px; margin:0px;">Whatever it is that you care about, there will be a charity working on it. Charities help in lots of different ways.</p>
             
             <div class="socials">
@@ -323,55 +330,48 @@
                 <a href="#"><i class="fa fa-youtube"></i></a>
             </div>
         </div>
-        <div class="col">
-            <h3>Menu</h3>
-                <ul class="box">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Achievement</a></li>
-                    <li><a href="#">Contributors</a></li>
-                    <li><a href="#">Blogs</a></li>
-                </ul>
-        </div>
-        <div class="col">
-            <h3>About Us</h3>
-                <ul class="box">
-                    <li><a href="#">How it work?</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-        </div>
 
-        <div class="col">
-            <h3>Contacts Info</h3>
+        <div class="col-auto-6">
+            <h3><span>Thông tin công ty</span></h3>
                 <ul class="box">
+                    <li><i class="fa-solid fa-building"></i>
+                        <b> &nbsp; Tên Công ty: </b> Smile Eye Charity
+                    </li>
+                    <li><i class="fa-regular fa-address-book"></i>
+                        <b> &nbsp; Mã số thuế: </b> 4001273487 
+                    </li>
                     <li class="row box-info">
-                        <div class="col-sm-2">
-                            <img src="image/phone.png" alt=""> 
+                        <div class="col-auto">
+                            <img src="image/phone.png" alt="">
                         </div>
                         <div class="col-sm-10 call">
-                            <h3>Call Us<br></h3>
                             <p>0962 414 125</p>
                         </div>
                     </li>
                     <li class="row box-info">
-                        <div class="col-sm-2">
+                        <div class="col-auto">
                             <img src="image/email.png" alt="">
                         </div>
                         <div class="col-sm-10">
-                            <h3>Mail Us</h3>
                             <p>dinhdongphuong@gmail.com</p>
                         </div>
                     </li>
                     <li class="row box-info">
-                        <div class="col-sm-2">
+                        <div class="col-auto">
                             <img src="image/pin.png" alt="">
                         </div>
                         <div class="col-sm-10">
-                            <h3>Visit Us</h3>
-                            <p>Thôn Pà-Ong, Cà Dy, Nam Giang, tỉnh Quảng Nam</p>
+                            <p>Thôn Pà-Ong, Xã Cà Dy, Huyện Nam Giang, Quảng Nam</p>
                         </div>
                     </li>
+        </div>
+
+        <div class="col-auto">
+            <h3><span>Giờ làm việc</span></h3>
+                <ul class="box">
+                    <li>Từ thứ 2 đến thứ 7: 8h30-17h30</li>
+                    <li>Hỗ trợ: 24/7</li>
+                    <li><img src="image/contact.png" style="width:250px;"></li>
                 </ul>
         </div>
     

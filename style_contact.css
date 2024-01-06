@@ -124,12 +124,12 @@ textarea{
     margin-bottom: 50px;
 }
 
-.info-contact{
+.info-contact .row{
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .info-contact .row .col-6 .title{

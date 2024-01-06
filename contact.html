@@ -26,56 +26,76 @@
             <div class="row">
                 <div class="col">
                     <img class="logo" src="image/logo.png">
-                    <a class="navbar-brand" href="index.html" style="color:white; font-size: 20pt; padding-right:70px;">Smile Eye Charity</a>
+                    <a class="navbar-brand" href="index.html"
+                        style="color:white; font-size: 20pt; padding-right:70px;">Smile Eye Charity</a>
 
                 </div>
-            
-                <div class="col-sm-auto language">
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #15742A; border-color: #15742A;">
+                
+                <div class="col-auto" style="height: 100%; line-height: 40px; padding-right: 0px;">
+                    <img id="language-image" src="image/flag.jpg" style="height:23px; line-height: 100%;">
+                </div>
+                <div class="col-sm-2 language" style="padding-left: 0px;">
+                    <!-- <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle language-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            style="background-color: #15742A; border-color: #15742A;">
                             <img src="image/flag.jpg" style="height:23px; width:40px;"> English
                         </a>
-                    
+
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')"><img src="image/flag.jpg" style="height:23px; width:40px;"> English</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('jp')"><img src="image/japanese.png" style="height:23px; width:40px;"> Japaneses</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('vn')"><img src="image/vietnam.jpg" style="height:23px; width:40px;"> Vietnamese</a></li>
+                            <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('en')"><img
+                                        src="image/flag.jpg" class="language-icon" style="height:23px; width:40px;">
+                                    English</a></li>
+                            <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('jp')"><img
+                                        src="image/japanese.png" class="language-icon" style="height:23px; width:40px;">
+                                    Japaneses</a></li>
+                            <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('vn')"><img
+                                        src="image/vietnam.jpg" class="language-icon" style="height:23px; width:40px;">
+                                    Vietnamese</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                     
+                    <select id="language-select" class="form-select form-select-lg mb-3" style="height: 40px; color:white; background-color:#15742A; border:#15742A;" aria-label="Large select example" onchange="changeLanguage()">
+                        <option selected value="en">English</option>
+                        <option value="vn">Vietnamese</option>
+                        <option value="jp">Japaneses</option>
+                      </select>
+
                 </div>
             </div>
         </div>
-        
+
         <div class="header-nav">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html" data-i18n="home" >Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html"
+                                    data-i18n="home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#activities" data-i18n="activities" >Activities</a>
+                                <a class="nav-link" href="index.html#activities" data-i18n="activities">Activities</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="achievement.html" data-i18n="achievement">Achievement</a>
+                                <a class="nav-link" href="index.html#blog" data-i18n="achievement">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contributors.html" data-i18n="contributors" >Contributors</a>
+                                <a class="nav-link" href="contributors.html" data-i18n="contributors">Contributors</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html"data-i18n="QA" >QA & Contact</a>
+                                <a class="nav-link" href="contact.html" data-i18n="QA">QA & Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
-        
+
     </header>
 
     <div class="backgroud">
@@ -233,23 +253,29 @@
 
     <div class="container text-justify info-contact">
         <div class="row">
-            <div class="col-6">
-                <img src="image/contact.jpg" style="width: 450px; float: right; padding-right: 20px;">
+            <div class="col-sm-5">
+                <img src="image/contact.png" style="width: 450px; float: right; padding-right: 20px;">
             </div>
             <div class="col-6">
                 <div class="title">
-                    <b>Contact Info</b>
+                    <b>Thông tin công ty</b>
                 </div>
                 <p><i class="fa-solid fa-building"></i>
-                    Company name: Smile Eye Charity</p>
+                    <b>Tên: </b> Công ty phi lợi nhuận hoạt động từ thiện Smile Eye Charity</p>
                 <p><i class="fa-regular fa-address-book"></i>
-                    Director: Dinh Thi Dong Phuong</p>
+                    <b>Giấy phép đăng ký:</b> 4001273487 </p>
+                <p style="margin-bottom:0px;"><i class="fa-solid fa-building-columns"></i>
+                    <b>Số tài khoản:</b> MB bank, 020166669999, Smile Eye Charity
+                        <p style="margin-left: 130px; ">Techcombank, 22296699, Smile Eye Charity</p>
+                </p>
+                <p><i class="fa-regular fa-address-book"></i>
+                    <b>Người đại diện:</b> Đinh Thị Đông Phương</p>
                 <p><i class="fa-solid fa-phone" style="font-size: 17px;"></i>
-                    0962 414 125</p>
+                    <b>Điện thoại: </b>0962 414 125</p>
                 <p><i class="fa-solid fa-envelope" style="font-size: 17px;"></i>
-                    dinhdongphuong@gmail.com</p>
-                    <p><i class="fa-solid fa-location-dot" style="font-size: 17px;"></i>
-                        Pa-Ong Village, Ca Dy Commune, Nam Giang District, Quang Nam Province</p>
+                    <b>Email: </b>dinhdongphuong@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot" style="font-size: 17px;"></i>
+                    <b>Địa chỉ: </b>Thôn Pà-Ong, Xã Cà Dy, Huyện Nam Giang, Quảng Nam</p>
         
             </div>
         </div>
@@ -275,9 +301,9 @@
 
 
     <footer class="row footer" style="margin-top: 70px;">
-        <div class="col-4 logo">
+        <div class="col-sm-5 logo">
             <img src="image/logo.png" alt="">
-            <p><h2><b>SmileEye</b></h2></p>
+            <p><h2><b>SmileEyeCharity</b></h2></p>
             <p style="font-size: 15px; margin:0px;">Whatever it is that you care about, there will be a charity working on it. Charities help in lots of different ways.</p>
             
             <div class="socials">
@@ -287,55 +313,49 @@
                 <a href="#"><i class="fa fa-youtube"></i></a>
             </div>
         </div>
-        <div class="col">
-            <h3>Menu</h3>
-                <ul class="box">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Achievement</a></li>
-                    <li><a href="#">Contributors</a></li>
-                    <li><a href="#">Blogs</a></li>
-                </ul>
-        </div>
-        <div class="col">
-            <h3>About Us</h3>
-                <ul class="box">
-                    <li><a href="#">How it work?</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-        </div>
 
-        <div class="col">
-            <h3>Contacts Info</h3>
+        <div class="col-auto-6">
+            <h3><span>Thông tin công ty</span></h3>
                 <ul class="box">
+                    <li><i class="fa-solid fa-building"></i>
+                        <b> &nbsp; Tên Công ty: </b> Smile Eye Charity
+                    </li>
+                    <li><i class="fa-regular fa-address-book"></i>
+                        <b> &nbsp; Mã số thuế: </b> 4001273487 
+                    </li>
                     <li class="row box-info">
-                        <div class="col-sm-2">
-                            <img src="image/phone.png" alt=""> 
+                        <div class="col-auto">
+                            <img src="image/phone.png" alt="">
                         </div>
                         <div class="col-sm-10 call">
-                            <h3>Call Us<br></h3>
                             <p>0962 414 125</p>
                         </div>
                     </li>
                     <li class="row box-info">
-                        <div class="col-sm-2">
+                        <div class="col-auto">
                             <img src="image/email.png" alt="">
                         </div>
                         <div class="col-sm-10">
-                            <h3>Mail Us</h3>
                             <p>dinhdongphuong@gmail.com</p>
                         </div>
                     </li>
                     <li class="row box-info">
-                        <div class="col-sm-2">
+                        <div class="col-auto">
                             <img src="image/pin.png" alt="">
                         </div>
                         <div class="col-sm-10">
-                            <h3>Visit Us</h3>
-                            <p>Thôn Pà-Ong, Cà Dy, Nam Giang, tỉnh Quảng Nam</p>
+                            <p>Thôn Pà-Ong, Xã Cà Dy, Huyện Nam Giang, Quảng Nam</p>
                         </div>
                     </li>
+        </div>
+
+        <div class="col-auto">
+            <h3><span>Giờ làm việc</span></h3>
+                <ul class="box">
+                    <li>Từ thứ 2 đến thứ 7: 8h30-17h30</li>
+                    <li>Hỗ trợ: 24/7</li>
+                    <li><img src="image/contact.png" style="width:250px;"></li>
+                </ul>
         </div>
     
     </footer>
