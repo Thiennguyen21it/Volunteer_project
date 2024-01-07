@@ -185,10 +185,15 @@ const share7 = document.getElementById("shareButton7");
 
 //Copy text
 
-function CopyText() {
+async function CopyText() {
   // Copy text logic here
-  document.getElementById("linkInput").select();
-  document.execCommand("copy");
+
+  // document.getElementById("linkInput").select();
+  // document.execCommand("copy");
+
+  var linkInput = document.getElementById("linkInput");
+  linkInput.select();
+  await navigator.clipboard.writeText(linkInput.value); // Use Clipboard API
 
   // Change button text to 'Copied'
   var copyButton = document.querySelector(".btn-success");
