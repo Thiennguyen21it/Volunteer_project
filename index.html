@@ -209,31 +209,27 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form method="POST" action="">
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Questions/ Contributive
-                                                Opinions</label>
-                                            <textarea class="form-control" placeholder="" id="floatingTextarea"
-                                                style="height: 150px;"></textarea>
+                                    <form id="email-form">
+                                        <div class="field mb-3 ">
+                                          <label class="form-label" for="from_name">Your Name</label>
+                                          <input class="form-control" type="text" name="from_name" id="from_name" aria-describedby="emailHelp">
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Your name</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp">
+                                        <div class="field mb-3">
+                                          <label class="form-label for="email_id ">Your email</label>
+                                          <input class="form-control" type="text" name="email_id" id="email_id">
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Your email</label>
-                                            <input type="email" class="form-control" id="exampleInputPassword1">
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Your phone</label>
+                                        <div class=" field mb-3">
+                                            <label class="form-label for="exampleInputPassword1" class="form-label">Your phone</label>
                                             <input type="text" class="form-control" id="exampleInputPassword1">
+                                            
                                         </div>
-
-                                        <button type="submit" class="btn btn-success"
-                                            style="float: right;">Submit</button>
-                                    </form>
+                                        <div class="field mb-3">
+                                          <label class="form-label for="message ">Questions/ Contributive Opinions</label>
+                                          <input type="text" class="form-control" name="message" id="message">
+                                        </div>
+                                      
+                                        <input type="submit" id="email-button" class="btn btn-success"  style="float: right"value="Send Email" >
+                                      </form>
                                 </div>
                                 <!-- <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -937,6 +933,36 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('11ZWWsy6CHydcJT5g')
+  </script>
+
+  <script>
+    const btn = document.getElementById('email-button');
+
+    document.getElementById('email-form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'service_u609thg';
+   const templateID = 'template_ao4bda9';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+
+  </script>
 
 </body>
 
