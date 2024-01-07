@@ -210,27 +210,26 @@ var translations = {
 //(lang,flagImage,displayText)
 
 function changeLanguage() {
-    var languageSelect = document.getElementById("language-select");
-    var lang = languageSelect.value;
-    var elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(function (element) {
-        var text = element.dataset.i18n;
-        element.innerHTML = translations[lang][text];
-    });
+  var languageSelect = document.getElementById("language-select");
+  var lang = languageSelect.value;
+  var elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach(function (element) {
+    var text = element.dataset.i18n;
+    element.innerHTML = translations[lang][text];
+  });
 
-    // Thay đổi ảnh dựa trên ngôn ngữ được chọn
-    var languageImage = document.getElementById("language-image");
-    if (lang === "vn") {
-        languageImage.src = "image/vietnam.jpg";
-    } else if (lang === "en") {
-        languageImage.src = "image/flag.jpg";
-    }
-    else if (lang === "jp") {
-        languageImage.src = "image/japanese.png";
-    }
+  // Thay đổi ảnh dựa trên ngôn ngữ được chọn
+  var languageImage = document.getElementById("language-image");
+  if (lang === "vn") {
+    languageImage.src = "image/vietnam.jpg";
+  } else if (lang === "en") {
+    languageImage.src = "image/flag.jpg";
+  } else if (lang === "jp") {
+    languageImage.src = "image/japanese.png";
+  }
 }
 
-const dialog = document.querySelector('#btnShare')
+const dialog = document.querySelector("#btnShare");
 const input = document.getElementById("linkInput");
 const share1 = document.getElementById("shareButton1");
 const share2 = document.getElementById("shareButton2");
@@ -241,79 +240,93 @@ const share6 = document.getElementById("shareButton6");
 const share7 = document.getElementById("shareButton7");
 
 //Copy text
-function CopyText() {
-    var linkValue = input.getAttribute('value');
-    navigator.clipboard.writeText(linkValue);
+
+async function CopyText() {
+  // Copy text logic here
+
+  // document.getElementById("linkInput").select();
+  // document.execCommand("copy");
+
+  var linkInput = document.getElementById("linkInput");
+  linkInput.select();
+  await navigator.clipboard.writeText(linkInput.value); // Use Clipboard API
+
+  // Change button text to 'Copied'
+  var copyButton = document.querySelector(".btn-success");
+  copyButton.textContent = "Copied";
+
+  // Close modal after a short delay to let user see the 'Copied' message
+  setTimeout(function () {
+    $("#btnShare").modal("hide");
+    copyButton.textContent = "Copy Link";
+  }, 1000);
 }
 
 function Close() {
-    share1.click();
+  share1.click();
 }
 
 function firstButton() {
-    share1.addEventListener('click', () => {
-        dialog.classList.toggle('active');
-    });
-    var link = document.querySelector('.Vid1');
-    var valueSrc = link.getAttribute('src');
-    input.setAttribute('value', valueSrc);
+  share1.addEventListener("click", () => {
+    dialog.classList.toggle("active");
+  });
+  var link = document.querySelector(".Vid1");
+  var valueSrc = link.getAttribute("src");
+  input.setAttribute("value", valueSrc);
 }
 function secondButton() {
-    share2.addEventListener('click', () => {
-        dialog.classList.toggle('active');
-    });
-    var link = document.querySelector('.Vid2');
-    var valueSrc = link.getAttribute('src');
-    input.setAttribute('value', valueSrc);
+  share2.addEventListener("click", () => {
+    dialog.classList.toggle("active");
+  });
+  var link = document.querySelector(".Vid2");
+  var valueSrc = link.getAttribute("src");
+  input.setAttribute("value", valueSrc);
 }
 function thirdButton() {
-    share3.addEventListener('click', () => {
-        dialog.classList.toggle('active');
-    });
-    var link = document.querySelector('.Vid3');
-    var valueSrc = link.getAttribute('src');
-    input.setAttribute('value', valueSrc);
+  share3.addEventListener("click", () => {
+    dialog.classList.toggle("active");
+  });
+  var link = document.querySelector(".Vid3");
+  var valueSrc = link.getAttribute("src");
+  input.setAttribute("value", valueSrc);
 }
 function fourthButton() {
-    share4.addEventListener('click', () => {
-        dialog.classList.toggle('active');
-    });
-    var link = document.querySelector('.Vid4');
-    var valueSrc = link.getAttribute('src');
-    input.setAttribute('value', valueSrc);
+  share4.addEventListener("click", () => {
+    dialog.classList.toggle("active");
+  });
+  var link = document.querySelector(".Vid4");
+  var valueSrc = link.getAttribute("src");
+  input.setAttribute("value", valueSrc);
 }
 function fifthButton() {
-    share5.addEventListener('click', () => {
-        dialog.classList.toggle('active');
-    });
-    var link = document.querySelector('.Vid5');
-    var valueSrc = link.getAttribute('src');
-    input.setAttribute('value', valueSrc);
+  share5.addEventListener("click", () => {
+    dialog.classList.toggle("active");
+  });
+  var link = document.querySelector(".Vid5");
+  var valueSrc = link.getAttribute("src");
+  input.setAttribute("value", valueSrc);
 }
 function sixButton() {
-    share6.addEventListener('click', () => {
-        dialog.classList.toggle('active');
-    });
-    var link = document.querySelector('.Vid6');
-    var valueSrc = link.getAttribute('src');
-    input.setAttribute('value', valueSrc);
+  share6.addEventListener("click", () => {
+    dialog.classList.toggle("active");
+  });
+  var link = document.querySelector(".Vid6");
+  var valueSrc = link.getAttribute("src");
+  input.setAttribute("value", valueSrc);
 }
 function sevenButton() {
-    share7.addEventListener('click', () => {
-        dialog.classList.toggle('active');
-    });
-    var link = document.querySelector('.Vid7');
-    var valueSrc = link.getAttribute('src');
-    input.setAttribute('value', valueSrc);
+  share7.addEventListener("click", () => {
+    dialog.classList.toggle("active");
+  });
+  var link = document.querySelector(".Vid7");
+  var valueSrc = link.getAttribute("src");
+  input.setAttribute("value", valueSrc);
 }
 
-share1.addEventListener('click', firstButton);
-share2.addEventListener('click', secondButton);
-share3.addEventListener('click', thirdButton);
-share4.addEventListener('click', fourthButton);
-share5.addEventListener('click', fifthButton);
-share6.addEventListener('click', sixButton);
-share7.addEventListener('click', sevenButton);
-
-
-
+share1.addEventListener("click", firstButton);
+share2.addEventListener("click", secondButton);
+share3.addEventListener("click", thirdButton);
+share4.addEventListener("click", fourthButton);
+share5.addEventListener("click", fifthButton);
+share6.addEventListener("click", sixButton);
+share7.addEventListener("click", sevenButton);

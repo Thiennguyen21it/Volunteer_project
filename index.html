@@ -19,6 +19,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -114,7 +115,6 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Share via copy link</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="input-group mb-3">
@@ -155,7 +155,7 @@
                 </div>
                 <div class="col-5 intro-project">
                     <div class="row">
-                        <p style="font-size: 10.5pt;" data-i18n="project_content">
+                        <p style="font-size: 10.5pt;" data-i18n="project_content" class="scrollable-content">
                             The new Pa Cang residential cluster is located on the beautiful Dakmy river, behind are the
                             gentle Truong Son mountains. The village has 30 Co Tu households, of which 26 are poor
                             (income less than 1,500,000 VND/household/month) and 4 near-poor households. Every day
@@ -197,11 +197,11 @@
                         Be a contributor or sponsor
                     </button>
 
-                    <!-- Btn Become sponsor -->
+                    <!-- Dialog Btn Become sponsor -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
-                        <div class="modal-dialog" style="margin-left: 130px; margin-right: 200px;">
-                            <div class="modal-content" style="width: 950px;">
+                        <div class="modal-dialog" style="margin-left: 130px; margin-right: 220px;">
+                            <div class="modal-content" style="width: 950px; background: #E9F3E7; padding: 30px;">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="exampleModalLabel">You want to <b>Become a
                                             contributor or sponsor</b> please fill in below:</h1>
@@ -209,31 +209,27 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form method="POST" action="">
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Questions/ Contributive
-                                                Opinions</label>
-                                            <textarea class="form-control" placeholder="" id="floatingTextarea"
-                                                style="height: 150px;"></textarea>
+                                    <form id="email-form">
+                                        <div class="field mb-3 ">
+                                          <label class="form-label" for="from_name">Your Name</label>
+                                          <input class="form-control" type="text" name="from_name" id="from_name" aria-describedby="emailHelp">
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Your name</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp">
+                                        <div class="field mb-3">
+                                          <label class="form-label for="email_id ">Your email</label>
+                                          <input class="form-control" type="text" name="email_id" id="email_id">
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Your email</label>
-                                            <input type="email" class="form-control" id="exampleInputPassword1">
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Your phone</label>
+                                        <div class=" field mb-3">
+                                            <label class="form-label for="exampleInputPassword1" class="form-label">Your phone</label>
                                             <input type="text" class="form-control" id="exampleInputPassword1">
+                                            
                                         </div>
-
-                                        <button type="submit" class="btn btn-success"
-                                            style="float: right;">Submit</button>
-                                    </form>
+                                        <div class="field mb-3">
+                                          <label class="form-label for="message ">Questions/ Contributive Opinions</label>
+                                          <input type="text" class="form-control" name="message" id="message">
+                                        </div>
+                                      
+                                        <input type="submit" id="email-button" class="btn btn-success"  style="float: right"value="Send Email" >
+                                      </form>
                                 </div>
                                 <!-- <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -244,7 +240,6 @@
                 </div>
 
             </div>
-        </div>
         </div>
     </section>
 
@@ -726,7 +721,7 @@
                 <span class="profile-name">Nguyen Van A</span>
             </div>
         </div>
-
+        #thienj
         <!-- Post box1 -->
         <div class="post-box">
             <img src="img/blogPhoto.png" alt="" class="post-img">
@@ -849,7 +844,7 @@
                                                 highlands.
                                             </p>
 
-                                            </p>
+                                            <!-- </p> -->
                                         </div>
                                     </div>
 
@@ -938,47 +933,37 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('11ZWWsy6CHydcJT5g')
+  </script>
 
-    <!-- Initialize Swiper  -->
-    <!-- <script>
-       var swiper = new Swiper(".mySwiper", {
-           slidesPerView: 2,
-           spaceBetween: 30,
-           slidesPerGroup: 2,
-           loop: true,
-           loopFillGroupWithBlank: true,
-           pagination: {
-               el: ".swiper-pagination",
-               clickable: true,
-           },
-            autoplay: {
-                delay: 6000,
-                disableOnInteraction: false,
-            },
-           navigation: {
-               nextEl: ".swiper-button-next",
-               prevEl: ".swiper-button-prev",
-           },
-       });
+  <script>
+    const btn = document.getElementById('email-button');
 
-       var swiper = new Swiper(".mySwiper2", {
-           spaceBetween: 30,
-           centeredSlides: true,
-            autoplay: {
-            delay: 6000,
-            disableOnInteraction: false,
-            },
-           pagination: {
-           el: ".swiper-pagination",
-           clickable: true,
-           },
-           navigation: {
-           nextEl: ".swiper-button-next",
-           prevEl: ".swiper-button-prev",
-           },
-       });
+    document.getElementById('email-form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-   </script> -->
+   btn.value = 'Sending...';
+
+   const serviceID = 'service_u609thg';
+   const templateID = 'template_ao4bda9';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+
+  </script>
+
 </body>
 
 </html>
