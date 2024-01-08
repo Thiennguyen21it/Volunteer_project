@@ -568,3 +568,150 @@ header .header-nav .navbar a:hover{
 .article .container img{
     width:100%;
 }
+
+
+/* QA & Contact */
+
+.backgroud {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-image: url(image/bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+.backgroud .overlap {
+    width: 100%;
+    height: 95%;
+    background-color: #00000059;
+}
+  
+.backgroud .text-wrapper-6 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 300px;
+    font-family: "Outfit", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 60px;
+    letter-spacing: 0;
+
+}
+.backgroud .p {
+    width: 100%;
+    text-align: center;
+    font-family: "Outfit", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 15px;
+    padding-top: 0px;
+    line-height: 400px;
+}
+
+.QA{
+    background-color: #ebf2ed;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.QA hr{
+    border-top: 1px solid #212529;
+    margin: 13px;
+}
+.QA .question {
+    /* cursor: pointer; */
+    font-size: 15pt;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ques{
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    color: #545454;
+    padding-top: 15px;
+}
+
+.answer.show {
+    display: block;
+}
+
+.arrow {
+    display: inline-block;
+    width: 15px;
+    transition: transform 0.3s;
+}
+
+.active.arrow {
+    transform: rotate(90deg);
+}
+
+.anyquestion{
+    font-size: 30pt;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.QA .container .row .text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    text-align: justify;
+}
+
+.contact{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 200px;
+    padding-right: 100px; */
+}
+
+.contact form{
+    font-size: 18pt;
+    text-align: center;
+    width: 70%;
+}
+
+.contact input{
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.contact .mb-3{
+    margin-bottom: 50px;
+}
+
+textarea{
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.info-contact .row{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.info-contact .row .col-6 .title{
+    /* text-align: center; */
+    padding-left: 50px;
+    font-size: 22pt;
+    padding-bottom: 10px;
+}
+
+.info-contact .row .col-6 p{
+    font-size: 13pt;
+}
