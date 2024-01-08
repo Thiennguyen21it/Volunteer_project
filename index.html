@@ -19,6 +19,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -114,7 +115,6 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Share via copy link</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="input-group mb-3">
@@ -227,31 +227,27 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form method="POST" action="">
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Questions/ Contributive
-                                                Opinions</label>
-                                            <textarea class="form-control" placeholder="" id="floatingTextarea"
-                                                style="height: 150px;"></textarea>
+                                    <form id="email-form">
+                                        <div class="field mb-3 ">
+                                          <label class="form-label" for="from_name">Your Name</label>
+                                          <input class="form-control" type="text" name="from_name" id="from_name" aria-describedby="emailHelp">
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Your name</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp">
+                                        <div class="field mb-3">
+                                          <label class="form-label for="email_id ">Your email</label>
+                                          <input class="form-control" type="text" name="email_id" id="email_id">
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Your email</label>
-                                            <input type="email" class="form-control" id="exampleInputPassword1">
-                                        </div>
-
-                                        <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Your phone</label>
+                                        <div class=" field mb-3">
+                                            <label class="form-label for="exampleInputPassword1" class="form-label">Your phone</label>
                                             <input type="text" class="form-control" id="exampleInputPassword1">
+                                            
                                         </div>
-
-                                        <button type="submit" class="btn btn-success"
-                                            style="float: right;">Submit</button>
-                                    </form>
+                                        <div class="field mb-3">
+                                          <label class="form-label for="message ">Questions/ Contributive Opinions</label>
+                                          <input type="text" class="form-control" name="message" id="message">
+                                        </div>
+                                      
+                                        <input type="submit" id="email-button" class="btn btn-success"  style="float: right"value="Send Email" >
+                                      </form>
                                 </div>
                                 <!-- <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -262,7 +258,6 @@
                 </div>
 
             </div>
-        </div>
         </div>
     </section>
 
@@ -976,7 +971,7 @@
                                                 &emsp;We feel happy because all of us have a warmer winter.
                                             </p>                                            
 
-                                            </p>
+                                            <!-- </p> -->
                                         </div>
                                     </div>
 
@@ -997,7 +992,7 @@
         <div class="col-sm-5 logo">
             <img src="image/logo.png" alt="">
             <p><h2><b>SmileEyeCharity</b></h2></p>
-            <p style="font-size: 15px; margin:0px;">Whatever it is that you care about, there will be a charity working on it. Charities help in lots of different ways.</p>
+            <p style="font-size: 15px; margin:0px;" data-i18n="footerSlogan">Whatever it is that you care about, there will be a charity working on it. Charities help in lots of different ways.</p>
             
             <div class="socials">
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -1008,13 +1003,13 @@
         </div>
 
         <div class="col-auto-6">
-            <h3><span>Thông tin công ty</span></h3>
+            <h3 data-i18n="footerCompany"><span>Contact Info</span></h3>
                 <ul class="box">
                     <li><i class="fa-solid fa-building"></i>
-                        <b> &nbsp; Tên Công ty: </b> Smile Eye Charity
+                        <b data-i18n="companyName"> &nbsp; Company's name: </b> Smile Eye Charity
                     </li>
                     <li><i class="fa-regular fa-address-book"></i>
-                        <b> &nbsp; Mã số thuế: </b> 4001273487 
+                        <b data-i18n="companyFax"> &nbsp; Fax: </b> 4001273487 
                     </li>
                     <li class="row box-info">
                         <div class="col-auto">
@@ -1037,16 +1032,16 @@
                             <img src="image/pin.png" alt="">
                         </div>
                         <div class="col-sm-10">
-                            <p>Thôn Pà-Ong, Xã Cà Dy, Huyện Nam Giang, Quảng Nam</p>
+                            <p data-i18n="companyAddress">Pa-Ong Village, Ca Dy Commune, Nam Giang District, Quang Nam</p>
                         </div>
                     </li>
         </div>
 
         <div class="col-auto">
-            <h3><span>Giờ làm việc</span></h3>
+            <h3 data-i18n="workHours"><span>Working time</span></h3>
                 <ul class="box">
-                    <li>Từ thứ 2 đến thứ 7: 8h30-17h30</li>
-                    <li>Hỗ trợ: 24/7</li>
+                    <li data-i18n="timeDetail">Time: 8:30 am ~ 5:30 pm</li>
+                    <li data-i18n="footerSupport">Support: 24/7</li>
                     <li><img src="image/contact.png" style="width:250px;"></li>
                 </ul>
         </div>
@@ -1065,6 +1060,36 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('11ZWWsy6CHydcJT5g')
+  </script>
+
+  <script>
+    const btn = document.getElementById('email-button');
+
+    document.getElementById('email-form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'service_u609thg';
+   const templateID = 'template_ao4bda9';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+
+  </script>
 
 </body>
 
