@@ -1302,6 +1302,7 @@
 </script> -->
 <script>
     $(document).ready(function () {
+        var loading = false
         // Lấy phần hash của đường dẫn trang hiện tại
         var currentHash = window.location.hash;
         console.log(currentHash);
@@ -1312,11 +1313,20 @@
             console.log(linkHash);
             if (path === linkHash) {
                 $(this).addClass('active');
+                loading = true;
+                refreshPage();
             } else {
                 $(this).removeClass('active');
             }
         });
     });
+    function refreshPage(){
+        if (loading) {
+            window.location.reload();
+            loading = true;
+        }
+    }
+
 </script>
 
 
