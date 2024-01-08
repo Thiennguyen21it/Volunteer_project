@@ -339,5 +339,23 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
+<script>
+    $(document).ready(function () {
+        //http://127.0.0.1:5503/index.html#activities
+        // Lấy đường dẫn hiện tại của trang web
+        var currentPath = window.location.pathname;
+        console.log(currentPath);
+        // Thêm class "active" cho liên kết tương ứng
+        $('.navbar-nav .nav-link').each(function () {
+            var linkPath = '/' + $(this).attr('href') ;
+            // console.log(linkPath);
+            if (currentPath === linkPath) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+        });
+    });
+</script>
 </body>
 </html>
