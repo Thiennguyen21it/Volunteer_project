@@ -273,6 +273,7 @@ header .header-nav .navbar a:hover{
 /*  */
 .program .row h2{
     font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
 }
 
 .program .box-container{
@@ -288,7 +289,7 @@ header .header-nav .navbar a:hover{
     border-radius: .5rem;
     /* border: .1rem solid rgba(0, 0, 0, .1); */
     position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
     justify-items: space-between;
     padding: 30px;
     
