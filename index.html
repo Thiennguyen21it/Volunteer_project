@@ -38,25 +38,6 @@
                     <img id="language-image" src="image/flag.jpg" style="height:23px; line-height: 100%;">
                 </div>
                 <div class="col-sm-2 language" style="padding-left: 0px;">
-                    <!-- <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle language-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"
-                            style="background-color: #15742A; border-color: #15742A;">
-                            <img src="image/flag.jpg" style="height:23px; width:40px;"> English
-                        </a>
-
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('en')"><img
-                                        src="image/flag.jpg" class="language-icon" style="height:23px; width:40px;">
-                                    English</a></li>
-                            <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('jp')"><img
-                                        src="image/japanese.png" class="language-icon" style="height:23px; width:40px;">
-                                    Japaneses</a></li>
-                            <li><a class="dropdown-item language-option" href="#" onclick="changeLanguage('vn')"><img
-                                        src="image/vietnam.jpg" class="language-icon" style="height:23px; width:40px;">
-                                    Vietnamese</a></li>
-                        </ul>
-                    </div> -->
 
                     <select id="language-select" class="form-select form-select-lg mb-3"
                         style="height: 40px; color:white; background-color:#15742A; border:#15742A;"
@@ -80,8 +61,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html"
-                                    data-i18n="home">Home</a>
+                                <a class="nav-link" id="home-link" aria-current="page" href="index.html"data-i18n="home">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html#activities" data-i18n="activities">Activities</a>
@@ -113,7 +93,7 @@
 
         <!-- Dialog Btn Share -->
         <div class="modal fade" id="btnShare" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" id="btnShare">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Share via copy link</h1>
@@ -134,7 +114,8 @@
         <div class="container content">
             <div class="row">
                 <div class="col">
-                    <p data-i18n="time"><i class="far fa-clock"></i><i> &nbsp; Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)</i></p>
+                    <p data-i18n="time"><i class="far fa-clock"></i><i> &nbsp; Time: 2 years (Jan 01st, 2024 ~ Jan 01st,
+                            2026)</i></p>
                     <p data-i18n="place"><i class="fas fa-map-marker-alt"></i> <i> &nbsp; Place: New Pa-Cang residential
                             cluster, Pa-Ong village, Ca-Dy commune, Nam Giang district, Quang Nam province, Vietnam</i>
                     </p>
@@ -157,7 +138,7 @@
                 </div>
                 <div class="col-5 intro-project">
                     <div class="row">
-                        <p style="font-size: 10.5pt;" data-i18n="project_content" class="scrollable-content">
+                        <p data-i18n="project_content" class="scrollable-content">
                             <!-- The new Pa Cang residential cluster is located on the beautiful Dakmy river, behind are the
                             gentle Truong Son mountains. The village has 30 Co Tu households, of which 26 are poor
                             (income less than 1,500,000 VND/household/month) and 4 near-poor households. Every day
@@ -169,24 +150,38 @@
                             programs for people. The project will accompany people, support them and provide practical
                             guidance for people to do and understand. From there, people improve their economic
                             capacity, which is the root of sustainable development. -->
-                            &emsp;How do you feel when you see the children in the above picture? I have met them in their village 
-                            and in their school. These are children of the Ko-tu ethnic minority. I also experienced my childhood 
-                            like that. We had no food and no clothes. And I was so happy that many people helped me and gave their 
-                            love to me. They gave me food and clothes. They taught me many skills for survival and living with their 
-                            kind heart. They helped me to develop my mind and my heart. I grew up in difficult conditions but I felt 
-                            that people are always full of love and support. Thanks to that, I have developed my self so that I could 
-                            received wonderful opportunities in my life. I got scholarship and successfully completed many practical 
-                            education programs in Japan, including information technology, and NLP. I become confident. I love this
+                            &emsp;How do you feel when you see the children in the above picture? I have met them in
+                            their village
+                            and in their school. These are children of the Ko-tu ethnic minority. I also experienced my
+                            childhood
+                            like that. We had no food and no clothes. And I was so happy that many people helped me and
+                            gave their
+                            love to me. They gave me food and clothes. They taught me many skills for survival and
+                            living with their
+                            kind heart. They helped me to develop my mind and my heart. I grew up in difficult
+                            conditions but I felt
+                            that people are always full of love and support. Thanks to that, I have developed my self so
+                            that I could
+                            received wonderful opportunities in my life. I got scholarship and successfully completed
+                            many practical
+                            education programs in Japan, including information technology, and NLP. I become confident.
+                            I love this
                             life. My soul is now fully filled with love for people.
                             <br><br>
-                            &emsp; The more I look at the children, the more I feel choked up and I burst into tears. These Ko-tu children 
-                            and the honest people here inspired me to my dream of volunteer. I will organize specific and practical 
-                            charity projects and programs to support people in difficult areas. The immediate goal is to help them 
-                            to have enough food. The next goal is to support them improve their skills. The goals will be achieved 
+                            &emsp; The more I look at the children, the more I feel choked up and I burst into tears.
+                            These Ko-tu children
+                            and the honest people here inspired me to my dream of volunteer. I will organize specific
+                            and practical
+                            charity projects and programs to support people in difficult areas. The immediate goal is to
+                            help them
+                            to have enough food. The next goal is to support them improve their skills. The goals will
+                            be achieved
                             in a sustainable way.
                             <br><br>
-                            &emsp; If you have the same feelings as me, and have the same dreams as me, please join these charity projects 
-                            with me. Our sincere participation will bring a lot of happiness to all parties. Our loves will help society 
+                            &emsp; If you have the same feelings as me, and have the same dreams as me, please join
+                            these charity projects
+                            with me. Our sincere participation will bring a lot of happiness to all parties. Our loves
+                            will help society
                             develop and spread love.
                         </p>
                     </div>
@@ -281,20 +276,32 @@
 
                 <div class="swiper-slide box">
                     <div class="title-cardBody">
-                        <h5 class="card-title" data-i18n="program_title1" style="height: 60px;">PROJECT TO HELP CO-TU PEOPLE PRODUCE FOOD</h5>
-                        <div class="row" style="padding: 0px;">
-                            <div class="col-6" style="height: 20px;">
-                                <p class="time" data-i18n="time">Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)</p>
-                            </div>
-                            <div class="col-12 icon">
-                                <p class="place" data-i18n="place">Place: Pà-căng village, Cà-dy commune, Nam Giang district, Quang Nam province</p>
-                                <p>2000 &nbsp;
-                                    <i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                    <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal"
-                                        data-bs-target="#btnShare"></i>
+                        <h5 class="card-title" data-i18n="program_title1" style="height: 60px;">Protect to help Co-Tu
+                            people produce food</h5>
+                        <div class="row" style="justify-content: space-between;">
+                            <div class="col-sm-8">
+                                <p class="time" data-i18n="time"><b>Time: </b> 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)
                                 </p>
+                                <p class="place" data-i18n="place"><b>Place:</b> Pà-căng village, Cà-dy commune, Nam
+                                    Giang
+                                    district, Quang Nam province</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="row icon">
+                                    <div class="col-sm-2">
+                                        <i class='fas fa-heart' style='color:red;'></i><br>2000
+
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal"
+                                            data-bs-target="#btnShare"></i>
+                                        <p> </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+
                     </div>
                     <div class="row">
                         <div class="col-7 video">
@@ -307,18 +314,18 @@
                         <div class="col-12 intro-project">
 
                             <p class="intro" data-i18n="program_content1">
-                                &emsp;Each family has a land space of about 500m2. It is almost vacant currently. 
-                                People grow some crops and raise some livestock according to old habits. They 
-                                do not have access to science and technology for effective production. Most of 
-                                them speak Co-tu language. All people in the village wish they can access farming 
+                                &emsp;Each family has a land space of about 500m2. It is almost vacant currently.
+                                People grow some crops and raise some livestock according to old habits. They
+                                do not have access to science and technology for effective production. Most of
+                                them speak Co-tu language. All people in the village wish they can access farming
                                 techniques to develop their garden land for food.
                                 <br><br>
-                                &emsp;This project aims to accompany and share sustainable organic vegetables and 
-                                livestock farming techniques with the villagers. Project experts will work with 
-                                people to build small-scale farming and livestock models in the village. They 
-                                will come to the village, work together and share directly with the villagers 
-                                how to farm, so that the villagers can deeply understand and practice directly. 
-                                Since then, the villagers can master the techniques and can build their own garden 
+                                &emsp;This project aims to accompany and share sustainable organic vegetables and
+                                livestock farming techniques with the villagers. Project experts will work with
+                                people to build small-scale farming and livestock models in the village. They
+                                will come to the village, work together and share directly with the villagers
+                                how to farm, so that the villagers can deeply understand and practice directly.
+                                Since then, the villagers can master the techniques and can build their own garden
                                 for their family food.
                             </p>
 
@@ -349,17 +356,29 @@
 
                 <div class="swiper-slide box">
                     <div class="title-cardBody">
-                        <h5 class="card-title" data-i18n="program_title2">PROJECT TO HELP CO-TU PEOPLE BUILD AN ORGANIC FERTILIZER HOUSE</h5>
-                        <div class="row" style="padding: 0px;">
-                            <div class="col-6" style="height: 20px;">
-                                <p class="time" data-i18n="time">Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)</p>
-                            </div>
-                            <div class="col-12 icon">
-                                <p class="place" data-i18n="place">Place: Pà-căng village, Cà-dy commune, Nam Giang district, Quang Nam province</p>
-                                <p>2000 &nbsp;
-                                    <i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                    <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal" data-bs-target="#btnShare"></i>
+                        <h5 class="card-title" data-i18n="program_title2">Project to help Co-Tu people build an organic
+                            fertilizer house</h5>
+                        <div class="row" style="justify-content: space-between;">
+                            <div class="col-sm-8">
+                                <p class="time" data-i18n="time"><b>Time: </b> 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)
                                 </p>
+                                <p class="place" data-i18n="place"><b>Place:</b> Pà-căng village, Cà-dy commune, Nam
+                                    Giang
+                                    district, Quang Nam province</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="row icon">
+                                    <div class="col-sm-2">
+                                        <i class='fas fa-heart' style='color:red;'></i><br>2000
+
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal"
+                                            data-bs-target="#btnShare"></i>
+                                        <p> </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -375,17 +394,17 @@
 
                             <p class="intro" data-i18n="program_content2">
                                 &emsp;Organic fertilizer is the ingredient that determines crop quality and yield.
-                                To develop sustainable farming and animal husbandry, it is essential to produce 
-                                organic fertilizer in the village. Currently, household waste and livestock waste 
-                                have not been used to make fertilizer. These components are released into the 
-                                environment, causing pollution. The villagers not only want to know how to make 
-                                organic fertilizer for plants, but also want to make the villages environment 
+                                To develop sustainable farming and animal husbandry, it is essential to produce
+                                organic fertilizer in the village. Currently, household waste and livestock waste
+                                have not been used to make fertilizer. These components are released into the
+                                environment, causing pollution. The villagers not only want to know how to make
+                                organic fertilizer for plants, but also want to make the villages environment
                                 cleaner and more beautiful.
                                 <br><br>
-                                &emsp;The project aims to support the villagers to build a house to produce 
-                                organic fertilizer from livestock waste, agricultural waste, and household waste. 
-                                Experts will work with the villagers to share the mehtods of classifying, 
-                                processing and producing organic fertilizer for their gardens. The environment 
+                                &emsp;The project aims to support the villagers to build a house to produce
+                                organic fertilizer from livestock waste, agricultural waste, and household waste.
+                                Experts will work with the villagers to share the mehtods of classifying,
+                                processing and producing organic fertilizer for their gardens. The environment
                                 will also be greener, cleaner and more beautiful.
                             </p>
 
@@ -416,17 +435,29 @@
 
                 <div class="swiper-slide box">
                     <div class="title-cardBody">
-                        <h5 class="card-title" data-i18n="program_title3">PROJECT TO SUPPORT CO-TU CHILDREN WITH BREAKFAST TO IMPROVE THEIR HEALTH</h5>
-                        <div class="row" style="padding: 0px;">
-                            <div class="col-6" style="height: 20px;">
-                                <p class="time" data-i18n="time">Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)</p>
-                            </div>
-                            <div class="col-12 icon">
-                                <p class="place" data-i18n="place">Place: Pà-căng village, Cà-dy commune, Nam Giang district, Quang Nam province</p>
-                                <p>2000 &nbsp;
-                                    <i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                    <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal" data-bs-target="#btnShare"></i>
+                        <h5 class="card-title" data-i18n="program_title3">Project to support Co-Tu children with
+                            breakfast to improve their health</h5>
+                        <div class="row" style="justify-content: space-between;">
+                            <div class="col-sm-8">
+                                <p class="time" data-i18n="time"><b>Time: </b> 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)
                                 </p>
+                                <p class="place" data-i18n="place"><b>Place:</b> Pà-căng village, Cà-dy commune, Nam
+                                    Giang
+                                    district, Quang Nam province</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="row icon">
+                                    <div class="col-sm-2">
+                                        <i class='fas fa-heart' style='color:red;'></i><br>2000
+
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal"
+                                            data-bs-target="#btnShare"></i>
+                                        <p> </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -441,18 +472,19 @@
                         <div class="col-12 intro-project">
 
                             <p class="intro" data-i18n="program_content3">
-                                &emsp;The long-lasting poverty of the villagers causes their children malnutrition. 
-                                Long-lasting malnutrition will lead to body weakness and illness. Long-lasting 
-                                malnutrition will take away the their opportunity to physical, mental and 
-                                intellectual development of the children. Long-lasting malnutrition will taking 
+                                &emsp;The long-lasting poverty of the villagers causes their children malnutrition.
+                                Long-lasting malnutrition will lead to body weakness and illness. Long-lasting
+                                malnutrition will take away the their opportunity to physical, mental and
+                                intellectual development of the children. Long-lasting malnutrition will taking
                                 away their bright future.
                                 <br><br>
-                                &emsp;Nutrition breakfast program helps children recover from malnutrition status. 
-                                The children gradually return to healthy state. Healthy children actively 
-                                participate in learning programs that help them develop their physical, mental 
+                                &emsp;Nutrition breakfast program helps children recover from malnutrition status.
+                                The children gradually return to healthy state. Healthy children actively
+                                participate in learning programs that help them develop their physical, mental
                                 and intellectual state furthur.
                                 <br><br>
-                                &emsp;Let’s participate in this program to give our love to light up our children future.
+                                &emsp;Let’s participate in this program to give our love to light up our children
+                                future.
                             </p>
 
                             <div class="row" class="funding">
@@ -482,17 +514,29 @@
 
                 <div class="swiper-slide box">
                     <div class="title-cardBody">
-                        <h5 class="card-title" data-i18n="program_title3">PROJECT TO SUPPORT CO-TU CHILDREN WITH BREAKFAST TO IMPROVE THEIR HEALTH</h5>
-                        <div class="row" style="padding: 0px;">
-                            <div class="col-6" style="height: 20px;">
-                                <p class="time" data-i18n="time">Time: 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)</p>
-                            </div>
-                            <div class="col-12 icon">
-                                <p class="place" data-i18n="place">Place: Pà-căng village, Cà-dy commune, Nam Giang district, Quang Nam province</p>
-                                <p>2000 &nbsp;
-                                    <i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                    <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal" data-bs-target="#btnShare"></i>
+                        <h5 class="card-title" data-i18n="program_title3">Project to support Co-Tu children with
+                            breakfast to improve their health</h5>
+                        <div class="row" style="justify-content: space-between;">
+                            <div class="col-sm-8">
+                                <p class="time" data-i18n="time"><b>Time: </b> 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)
                                 </p>
+                                <p class="place" data-i18n="place"><b>Place:</b> Pà-căng village, Cà-dy commune, Nam
+                                    Giang
+                                    district, Quang Nam province</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="row icon">
+                                    <div class="col-sm-2">
+                                        <i class='fas fa-heart' style='color:red;'></i><br>2000
+
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal"
+                                            data-bs-target="#btnShare"></i>
+                                        <p> </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -507,18 +551,19 @@
                         <div class="col-12 intro-project">
 
                             <p class="intro" data-i18n="program_content3">
-                                &emsp;The long-lasting poverty of the villagers causes their children malnutrition. 
-                                Long-lasting malnutrition will lead to body weakness and illness. Long-lasting 
-                                malnutrition will take away the their opportunity to physical, mental and 
-                                intellectual development of the children. Long-lasting malnutrition will taking 
+                                &emsp;The long-lasting poverty of the villagers causes their children malnutrition.
+                                Long-lasting malnutrition will lead to body weakness and illness. Long-lasting
+                                malnutrition will take away the their opportunity to physical, mental and
+                                intellectual development of the children. Long-lasting malnutrition will taking
                                 away their bright future.
                                 <br><br>
-                                &emsp;Nutrition breakfast program helps children recover from malnutrition status. 
-                                The children gradually return to healthy state. Healthy children actively 
-                                participate in learning programs that help them develop their physical, mental 
+                                &emsp;Nutrition breakfast program helps children recover from malnutrition status.
+                                The children gradually return to healthy state. Healthy children actively
+                                participate in learning programs that help them develop their physical, mental
                                 and intellectual state furthur.
                                 <br><br>
-                                &emsp;Let’s participate in this program to give our love to light up our children future.
+                                &emsp;Let’s participate in this program to give our love to light up our children
+                                future.
                             </p>
 
                             <div class="row" class="funding">
@@ -625,16 +670,27 @@
                 <div class="swiper-slide box">
                     <div class="title-cardBody">
                         <h5 class="card-title" data-i18n="program_title1">Teaching English for kids in the village</h5>
-                        <div class="row" style="padding: 0px;">
-                            <div class="col-6" style="height: 20px;">
-                                <p class="time">Time: 23/10/2023</p>
-                            </div>
-                            <div class="col-12 icon">
-                                <p class="place">Place: Pà - Ong</p>
-                                <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                    <i id="shareButton4" class="fa-solid fa-share" data-bs-toggle="modal"
-                                        data-bs-target="#btnShare"></i>
+                        <div class="row" style="justify-content: space-between;">
+                            <div class="col-sm-8">
+                                <p class="time" data-i18n="time"><b>Time: </b> 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)
                                 </p>
+                                <p class="place" data-i18n="place"><b>Place:</b> Pà-căng village, Cà-dy commune, Nam
+                                    Giang
+                                    district, Quang Nam province</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="row icon">
+                                    <div class="col-sm-2">
+                                        <i class='fas fa-heart' style='color:red;'></i><br>2000
+
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal"
+                                            data-bs-target="#btnShare"></i>
+                                        <p> </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -684,16 +740,27 @@
                 <div class="swiper-slide box">
                     <div class="title-cardBody">
                         <h5 class="card-title" data-i18n="program_title1">Teaching English for kids in the village</h5>
-                        <div class="row" style="padding: 0px;">
-                            <div class="col-6" style="height: 20px;">
-                                <p class="time">Time: 23/10/2023</p>
-                            </div>
-                            <div class="col-12 icon">
-                                <p class="place">Place: Pà - Ong</p>
-                                <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                    <i id="shareButton5" class="fa-solid fa-share" data-bs-toggle="modal"
-                                        data-bs-target="#btnShare"></i>
+                        <div class="row" style="justify-content: space-between;">
+                            <div class="col-sm-8">
+                                <p class="time" data-i18n="time"><b>Time: </b> 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)
                                 </p>
+                                <p class="place" data-i18n="place"><b>Place:</b> Pà-căng village, Cà-dy commune, Nam
+                                    Giang
+                                    district, Quang Nam province</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="row icon">
+                                    <div class="col-sm-2">
+                                        <i class='fas fa-heart' style='color:red;'></i><br>2000
+
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal"
+                                            data-bs-target="#btnShare"></i>
+                                        <p> </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -755,16 +822,27 @@
                 <div class="swiper-slide box">
                     <div class="title-cardBody">
                         <h5 class="card-title" data-i18n="program_title1">Teaching English for kids in the village</h5>
-                        <div class="row" style="padding: 0px;">
-                            <div class="col-6" style="height: 20px;">
-                                <p class="time">Time: 23/10/2023</p>
-                            </div>
-                            <div class="col-12 icon">
-                                <p class="place">Place: Pà - Ong</p>
-                                <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                    <i id="shareButton6" class="fa-solid fa-share" data-bs-toggle="modal"
-                                        data-bs-target="#btnShare"></i>
+                        <div class="row" style="justify-content: space-between;">
+                            <div class="col-sm-8">
+                                <p class="time" data-i18n="time"><b>Time: </b> 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)
                                 </p>
+                                <p class="place" data-i18n="place"><b>Place:</b> Pà-căng village, Cà-dy commune, Nam
+                                    Giang
+                                    district, Quang Nam province</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="row icon">
+                                    <div class="col-sm-2">
+                                        <i class='fas fa-heart' style='color:red;'></i><br>2000
+
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal"
+                                            data-bs-target="#btnShare"></i>
+                                        <p> </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -814,16 +892,27 @@
                 <div class="swiper-slide box">
                     <div class="title-cardBody">
                         <h5 class="card-title" data-i18n="program_title1">Teaching English for kids in the village</h5>
-                        <div class="row" style="padding: 0px;">
-                            <div class="col-6" style="height: 20px;">
-                                <p class="time">Time: 23/10/2023</p>
-                            </div>
-                            <div class="col-12 icon">
-                                <p class="place">Place: Pà - Ong</p>
-                                <p>2000 &nbsp;<i class='fas fa-heart' style='color:red; padding-right: 10px;'></i>
-                                    <i id="shareButton7" class="fa-solid fa-share" data-bs-toggle="modal"
-                                        data-bs-target="#btnShare"></i>
+                        <div class="row" style="justify-content: space-between;">
+                            <div class="col-sm-8">
+                                <p class="time" data-i18n="time"><b>Time: </b> 2 years (Jan 01st, 2024 ~ Jan 01st, 2026)
                                 </p>
+                                <p class="place" data-i18n="place"><b>Place:</b> Pà-căng village, Cà-dy commune, Nam
+                                    Giang
+                                    district, Quang Nam province</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="row icon">
+                                    <div class="col-sm-2">
+                                        <i class='fas fa-heart' style='color:red;'></i><br>2000
+
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <i id="shareButton2" class="fa-solid fa-share" data-bs-toggle="modal"
+                                            data-bs-target="#btnShare"></i>
+                                        <p> </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -876,7 +965,7 @@
 
     <!-- blog -->
     <div class="row" style="text-align: center; padding-top: 35px;">
-        <h2 data-i18n="blog_title">Our Blog</h2>
+        <h2 data-i18n="blog_title"><span>Our Blog</span></h2>
     </div>
     <section class="post container" id="blog">
         <!-- Post box1 -->
@@ -887,10 +976,10 @@
             </a>
             <span class="post-date" data-i18n="postBox_date">July 2023</span>
             <p class="post-decription" data-i18n="postDecription">
-                Business owner of Cortex Textile (www.cortextextile.com) and his employees prepared food, 
-                clothes, toothbrushes and toothpaste, sanitary napkins for girls, milk for special children, 
-                and more. They personally brought the items back to the village and explained to the villagers 
-                how to use them with love. The villagers welcomed everyone with a lunch of special dishes from 
+                Business owner of Cortex Textile (www.cortextextile.com) and his employees prepared food,
+                clothes, toothbrushes and toothpaste, sanitary napkins for girls, milk for special children,
+                and more. They personally brought the items back to the village and explained to the villagers
+                how to use them with love. The villagers welcomed everyone with a lunch of special dishes from
                 the mountains and forests. We all had a fun together.
             </p>
             <!-- Profile -->
@@ -940,82 +1029,24 @@
             </div>
         </div>
 
-        <!-- Post box1 -->
-        <div class="post-box">
-            <img src="img/blogPhoto.png" alt="" class="post-img">
-            <a href="#my-dialog" class="post-title" data-i18n="postBox_title">
-                Bringing a "warm" Tet to the highland people of Nam Giang
-            </a>
-            <span class="post-date">January 17, 2022</span>
-            <p class="post-decription" data-i18n="postDecription">
-                These are communes bordering Se Kong province, Laos, in which Cho Chun and La Eê are the two most remote
-                communes of Nam Giang district with more than 90% of the population being ethnic minorities, many of
-                whom are ethnic minorities. The area has no mobile phone signal, the road to the commune center and
-                villages is very difficult, and in the rainy season it is impossible to travel by motorbike.
-            </p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="img/ellipse-118.png" alt="" class="profile-img">
-                <span class="profile-name">Nguyen Van A</span>
-            </div>
-        </div>
-        #thienj
-        <!-- Post box1 -->
-        <div class="post-box">
-            <img src="img/blogPhoto.png" alt="" class="post-img">
-            <a href="#my-dialog" class="post-title" data-i18n="postBox_title">
-                Bringing a "warm" Tet to the highland people of Nam Giang
-            </a>
-            <span class="post-date">January 17, 2022</span>
-            <p class="post-decription" data-i18n="postDecription">
-                These are communes bordering Se Kong province, Laos, in which Cho Chun and La Eê are the two most remote
-                communes of Nam Giang district with more than 90% of the population being ethnic minorities, many of
-                whom are ethnic minorities. The area has no mobile phone signal, the road to the commune center and
-                villages is very difficult, and in the rainy season it is impossible to travel by motorbike.
-            </p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="img/ellipse-118.png" alt="" class="profile-img">
-                <span class="profile-name">Nguyen Van A</span>
-            </div>
-        </div>
-
-        <!-- Post box1 -->
-        <div class="post-box">
-            <img src="img/blogPhoto.png" alt="" class="post-img">
-            <a href="#my-dialog" class="post-title" data-i18n="postBox_title">
-                Bringing a "warm" Tet to the highland people of Nam Giang
-            </a>
-            <span class="post-date">January 17, 2022</span>
-            <p class="post-decription" data-i18n="postDecription">
-                These are communes bordering Se Kong province, Laos, in which Cho Chun and La Eê are the two most remote
-                communes of Nam Giang district with more than 90% of the population being ethnic minorities, many of
-                whom are ethnic minorities. The area has no mobile phone signal, the road to the commune center and
-                villages is very difficult, and in the rainy season it is impossible to travel by motorbike.
-            </p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="img/ellipse-118.png" alt="" class="profile-img">
-                <span class="profile-name">Nguyen Van A</span>
-            </div>
-        </div>        
-
         <!-- dialog-post -->
-        <div class="dialog overlay" id="my-dialog" style="padding-top: 400px;">
-            <a href="#" class="overlay-close"></a>
+        <div class="dialog overlay" id="my-dialog" style="padding-top: 200px;">
+            <a href="" class="overlay-close"></a>
             <div class="dialog-body">
-                <a class="btn-close" href="#"></a>
+                <a class="btn-close" href=""></a>
                 <div class="article">
                     <div class="container">
                         <section class="program">
                             <div class="title-cardBody">
-                                <h5 class="card-title" data-i18n="postBox_title">SUPPORT FOOD AND CLOTHES BEFORE RAINY SEASONS-2023</h5>
+                                <h5 class="card-title" data-i18n="postBox_title">SUPPORT FOOD AND CLOTHES BEFORE RAINY
+                                    SEASONS-2023</h5>
                                 <div class="col-12 date_time">
-                                    <p style="margin-bottom: 0px; margin-top: 10px;"><i>Date posted: January 17, 2022</i></p>
+                                    <p style="margin-bottom: 0px; margin-top: 10px;"><i>Date posted: January 17,
+                                            2022</i></p>
                                     <div class="icon"
                                         style="display: flex; flex-direction: row; justify-content: space-between;">
                                         <p style="margin-bottom: 0px;"><i>Author: Youth Union Editor</i></p>
-                                        <i id="shareButton7" style="font-size: 20px;" class="fa-solid fa-share"
+                                        <i id="shareButton2" style="font-size: 20px;" class="fa-solid fa-share"
                                             data-bs-toggle="modal" data-bs-target="#btnShare"></i>
                                     </div>
                                 </div>
@@ -1035,14 +1066,18 @@
                                         </div>
                                         <div class="row-12 intro-project" style="margin-top:20px;">
                                             <p class="intro" style="text-align: justify;" data-i18n="introBlog">
-                                                &emsp;Business owner of Cortex Textile (www.cortextextile.com) and his employees prepared food, clothes, 
-                                                toothbrushes and toothpaste, sanitary napkins for girls, milk for special children, and more. They 
-                                                personally brought the items back to the village and explained to the villagers how to use them with 
-                                                love. The villagers welcomed everyone with a lunch of special dishes from the mountains and forests. 
+                                                &emsp;Business owner of Cortex Textile (www.cortextextile.com) and his
+                                                employees prepared food, clothes,
+                                                toothbrushes and toothpaste, sanitary napkins for girls, milk for
+                                                special children, and more. They
+                                                personally brought the items back to the village and explained to the
+                                                villagers how to use them with
+                                                love. The villagers welcomed everyone with a lunch of special dishes
+                                                from the mountains and forests.
                                                 We all had a fun together. </p>
                                             <p style="text-align: justify;" data-i18n="introBlog1">
                                                 &emsp;We feel happy because all of us have a warmer winter.
-                                            </p>                                            
+                                            </p>
 
                                             <!-- </p> -->
                                         </div>

@@ -50,7 +50,7 @@ html{
 .field input {
     height: 100%;
     font-size: 15px;
-    width: 70%;
+    width: 100%;
 }
 
 .field button {
@@ -64,12 +64,18 @@ html{
 }
 
 span{
-    color: var(--primary-color);
+    color: #2a8e40;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
 }
 
 button{
     background-color: var(--primary-color);
     color: var(--white);
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* header */
@@ -139,8 +145,13 @@ header .header-nav .nav-link{
 
 }
 
+
 header .header-nav .navbar a:hover{
     color: var(--primary-color);
+}
+
+.nav-link.active{
+    color: green;
 }
 
 /* project */
@@ -164,18 +175,20 @@ header .header-nav .navbar a:hover{
 }
 
 .project .content .intro-project{
-    padding-left: 35px;
+    padding-left: 20px;
 }
 
 .project .content .intro-project p{
     text-align:justify;
     margin: 5px;
     font-size: small;
-}
+}   
 
 .project .content .row .intro-project .scrollable-content{
     overflow-y: scroll;
-    height: 350px;
+    height: 340px;
+    font-size: 13pt;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .project .content .icon{
@@ -199,17 +212,20 @@ header .header-nav .navbar a:hover{
 
 .program .container .box-container .box .row{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .program .container .box-container .box .icon{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .program .container .box-container .box .icon .fa-share, .fa-heart{
-    font-size: 24px;
+    font-size: 26px;
+}
+
+.program .container .box-container .box .icon .fa-share{
+    font-size: 26px;
 }
 
 .program .container .box-container .box .intro-project .row-button{
@@ -230,6 +246,9 @@ header .header-nav .navbar a:hover{
 }
 
 /*  */
+.program .row h2{
+    font-family: 'Times New Roman', Times, serif;
+}
 
 .program .box-container{
     display: flex;
@@ -254,7 +273,7 @@ header .header-nav .navbar a:hover{
     text-align: left;
     font-size: 18pt;
     font-weight: 500;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     padding-bottom: 15px;    
 }
 
@@ -278,9 +297,11 @@ header .header-nav .navbar a:hover{
 }
 
 .program .container .box-container .box .intro-project .intro{
-    font-size: 11pt; 
+    font-size: 13pt; 
+    font-family: 'Times New Roman', Times, serif;
     text-align:justify;
     padding-top: 25px;
+    padding-right: 20px;
     overflow-y: scroll;
     height: 200px;
 }
@@ -297,6 +318,8 @@ header .header-nav .navbar a:hover{
 .program .box-container .box .time, .place{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    margin-bottom: 10px;
+    font-weight: 400;
 }
 
 /*  */
